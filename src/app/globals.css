@@ -10,6 +10,7 @@
 * foreground-secondary: headers
 */
 
+/* darkmode */
 :root {
   /* wikipedia ---------------- */
   --background: 270 6% 7%;
@@ -19,7 +20,6 @@
 
   --surface: ;
   --surface-secondary: ;
-
 
   --accent: 258 90% 66%;
   --accent-foreground: 258 90% 66%;
@@ -31,7 +31,6 @@
   --shadow-md: ;
   --shadow-lg: ;
   --shadow-xl: ;
-
 
   /* expo ----------------------- */
   /* --background: 200, 7%, 9%;
@@ -55,7 +54,6 @@
     --shadow-md: ;
     --shadow-lg: ;
     --shadow-xl: ; */
-
 }
 
 .light {
@@ -137,17 +135,17 @@
 * GLOBAL CLASSES
 */
 .container-4xl {
-  @apply max-w-4xl mx-auto
+  @apply max-w-4xl mx-auto;
 }
 
 .social-link-icon {
-  @apply hover:fill-accent hover:stroke-accent
+  @apply hover:fill-accent hover:stroke-accent;
 }
 
-.hero-images{
-scrollbar-width: none; /*Firefox*/
+.hero-images {
+  scrollbar-width: none; /*Firefox*/
 }
 
-.hero-images::-webkit-scrollbar{
-  display:none /*chrome and safari*/
+.hero-images::-webkit-scrollbar {
+  display: none; /*chrome and safari*/
 }

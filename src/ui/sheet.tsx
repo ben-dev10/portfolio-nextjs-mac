@@ -2,7 +2,7 @@ import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
 // import { X } from "lucide-react";
-import { XCloseIcon } from "@/components/navbar/sheet-close-icon";
+import { XCloseIcon } from "@/app/components/navbar/sheet-close-icon";
 
 import { cn } from "@/utils/cn";
 

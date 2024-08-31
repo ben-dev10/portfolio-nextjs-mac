@@ -1,0 +1,81 @@
+<svg width="488" height="366" viewBox="0 0 488 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_94_426" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="488" height="366">
+<rect width="488" height="366" fill="url(#paint0_radial_94_426)"/>
+</mask>
+<g mask="url(#mask0_94_426)">
+<path d="M0 0V366" stroke="#D1D5DB"/>
+<path d="M24 0V366" stroke="#D1D5DB"/>
+<path d="M49 0V366" stroke="#D1D5DB"/>
+<path d="M73 0V366" stroke="#D1D5DB"/>
+<path d="M98 0V366" stroke="#D1D5DB"/>
+<path d="M122 0V366" stroke="#D1D5DB"/>
+<path d="M146 0V366" stroke="#D1D5DB"/>
+<path d="M171 0V366" stroke="#D1D5DB"/>
+<path d="M195 0V366" stroke="#D1D5DB"/>
+<path d="M220 0V366" stroke="#D1D5DB"/>
+<path d="M244 0V366" stroke="#D1D5DB"/>
+<path d="M268 0V366" stroke="#D1D5DB"/>
+<path d="M293 0V366" stroke="#D1D5DB"/>
+<path d="M317 0V366" stroke="#D1D5DB"/>
+<path d="M341 0V366" stroke="#D1D5DB"/>
+<path d="M366 0V366" stroke="#D1D5DB"/>
+<path d="M390 0V366" stroke="#D1D5DB"/>
+<path d="M415 0V366" stroke="#D1D5DB"/>
+<path d="M439 0V366" stroke="#D1D5DB"/>
+<path d="M463 0V366" stroke="#D1D5DB"/>
+<path d="M488 0V366" stroke="#D1D5DB"/>
+<path d="M0 366H488" stroke="#D1D5DB"/>
+<path d="M0 341H488" stroke="#D1D5DB"/>
+<path d="M0 317H488" stroke="#D1D5DB"/>
+<path d="M0 293H488" stroke="#D1D5DB"/>
+<path d="M0 268H488" stroke="#D1D5DB"/>
+<path d="M0 244H488" stroke="#D1D5DB"/>
+<path d="M0 220H488" stroke="#D1D5DB"/>
+<path d="M0 195H488" stroke="#D1D5DB"/>
+<path d="M0 171H488" stroke="#D1D5DB"/>
+<path d="M0 146H488" stroke="#D1D5DB"/>
+<path d="M0 122H488" stroke="#D1D5DB"/>
+<path d="M0 98H488" stroke="#D1D5DB"/>
+<path d="M0 73H488" stroke="#D1D5DB"/>
+<path d="M0 49H488" stroke="#D1D5DB"/>
+<path d="M0 24H488" stroke="#D1D5DB"/>
+<path d="M0 0H488" stroke="#D1D5DB"/>
+<rect x="24" y="122" width="25" height="24" fill="#D9D9D9"/>
+<rect x="73" width="25" height="24" fill="#D9D9D9"/>
+<rect x="122" y="195" width="24" height="25" fill="#D9D9D9"/>
+<rect x="171" y="73" width="24" height="25" fill="#D9D9D9"/>
+<rect x="122" y="98" width="24" height="24" fill="#D9D9D9"/>
+<rect x="220" width="24" height="24" fill="#D9D9D9"/>
+<rect x="390" width="25" height="24" fill="#D9D9D9"/>
+<rect x="268" y="73" width="25" height="25" fill="#D9D9D9"/>
+<rect x="317" y="122" width="24" height="24" fill="#D9D9D9"/>
+<rect x="244" y="195" width="24" height="25" fill="#D9D9D9"/>
+<rect x="415" y="195" width="24" height="25" fill="#D9D9D9"/>
+<rect x="341" y="268" width="25" height="25" fill="#D9D9D9"/>
+<rect x="49" y="268" width="25" height="25" fill="#D9D9D9"/>
+<rect x="220" y="317" width="24" height="24" fill="#D9D9D9"/>
+<rect x="415" y="73" width="24" height="25" fill="#D9D9D9"/>
+</g>
+<g opacity="0.5">
+<path d="M341.5 69V76" stroke="black"/>
+<path d="M338 72.5H345" stroke="black"/>
+</g>
+<g opacity="0.5">
+<path d="M340.5 216V223" stroke="black"/>
+<path d="M337 219.5H344" stroke="black"/>
+</g>
+<g opacity="0.5">
+<path d="M121.5 216V223" stroke="black"/>
+<path d="M118 219.5H125" stroke="black"/>
+</g>
+<g opacity="0.5">
+<path d="M121.5 69V76" stroke="black"/>
+<path d="M118 72.5H125" stroke="black"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_94_426" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(244 183) rotate(90) scale(183 244)">
+<stop stop-color="#F7F7F7"/>
+<stop offset="1" stop-color="#C2C2C2" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

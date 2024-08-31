@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 import { footerLinksData } from "./footerLinksData";
 import nardLogoLarge from "public/logos/nard-logo-1.svg";
 import { useContext } from "react";
-import { AppContext } from "../../app/store";
+import { AppContext } from "../../store";
 import nardLogoDark from "public/logos/nard-logo-1-darkmode.svg";
 
 export const FooterLinks = () => {
