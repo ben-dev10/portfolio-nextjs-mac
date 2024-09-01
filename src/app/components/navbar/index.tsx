@@ -39,15 +39,15 @@ function Links() {
   ];
 
   return (
-    <div className="space-x-3 dark:text-slate-50 hidden md:block">
-      <ul className="list-none text-foreground flex gap-2">
+    <div className="hidden space-x-3 dark:text-slate-50 md:block">
+      <ul className="flex list-none gap-2 text-foreground">
         {NavLinks.map((link) => (
           <li key={link.id}>
             <Link
               href={link.path}
               id="navLink"
-              className={` hover:text-accent relative ${
-                isActive(link.path) ? "text-accent font-bold active" : ""
+              className={`relative hover:text-accent ${
+                isActive(link.path) ? "active font-bold text-accent" : ""
               }`}
             >
               {link.name}
@@ -80,7 +80,7 @@ function Availability({ className, status }: work) {
         <p
           className={`indicator size-[8px] rounded-[100%] ${
             status == "available" ? "bg-green-500" : "bg-red-500"
-          }  animate-ping`}
+          } animate-ping`}
         ></p>
       </div>
       {status == "available" ? <p>Available for work</p> : <p>Away</p>}
@@ -95,7 +95,7 @@ function CV() {
         <Button
           variant="pill"
           size="pill"
-          className="text-accent border-0 bg-accent flex text-white px-2 py-[2px] hover:ring-[4px] hover:ring-accent/30"
+          className="flex border-0 bg-accent px-2 py-[2px] text-accent text-white hover:ring-[4px] hover:ring-accent/30"
         >
           CV
           <Download size={14} className="ml-1" />
@@ -105,19 +105,18 @@ function CV() {
   );
 }
 
-
 // TODO: experimental expandable navbar
 export default function NavBar() {
   const [theme, setTheme] = useState(localStorage.getItem("portfolio-theme"));
 
   useTheme();
   return (
-    <div className="header-wrapper border-b border-border bg-gray-50 dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
-      <div className="container-4xl w-full h-[60px]">
-        <div className="primary-nav flex gap-x-3 items-center p-2 pl-[7px] pt-3 md:pt-4 px-4">
+    <div className="header-wrapper sticky top-0 border-b border-border bg-gray-50 dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
+      <div className="container-4xl h-[60px] w-full">
+        <div className="primary-nav flex items-center gap-x-3 p-2 px-4 pl-[7px] pt-3 md:pt-4">
           <MenuIcon />
           <Logo theme={theme} />
-          <Availability status="available" className="hidden md:flex mr-2" />
+          <Availability status="available" className="mr-2 hidden md:flex" />
           <CV />
           <Links />
           <div className="ml-2 hidden md:block">
@@ -127,7 +126,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className="secondary-nav bg-slate-300/[.15] dark:bg-slate-700/[.15] md:hidden">
-        <div className="wrapper container-4xl  p-2 px-4">
+        <div className="wrapper container-4xl p-2 px-4">
           <Availability status="available" />
         </div>
       </div>

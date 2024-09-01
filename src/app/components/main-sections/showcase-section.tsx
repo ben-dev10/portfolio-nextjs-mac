@@ -1,5 +1,5 @@
 import { Text } from "@/ui/text/text";
-import { ArrowUpRightFromSquareIcon } from "lucide-react";
+import { ArrowUpRight, ArrowUpRightFromSquareIcon } from "lucide-react";
 
 export const ShowcaseCard = ({
   title,
@@ -13,20 +13,23 @@ export const ShowcaseCard = ({
   imgUrl: string;
 }) => {
   return (
-    <div className="showcase-card w-[400px] aspect-[4/3] bg-white border rounded-md shrink-0">
+    <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-white shadow-sm">
       <div className="img">
         <img src={imgUrl} alt="product-image" />
       </div>
       <div className="flex flex-col p-3">
-        <h3 className="text-accent font-bold text-[16px]">{title}</h3>
+        <h3 className="text-[16px] font-bold text-accent">{title}</h3>
         <p>{description}</p>
-        <div className="flex mt-2">
+        <div className="mt-2 flex">
           <div className="tech-stack flex gap-1">
             <p>TS</p>
             <p>React</p>
           </div>
           <div className="link ml-auto">
-            <a href={url} className="flex items-center text-accent gap-1">
+            <a
+              href={url}
+              className="flex items-center gap-1 text-accent hover:text-accent/90"
+            >
               Visit Live Site
               <ArrowUpRightFromSquareIcon size={16} />
             </a>
@@ -40,12 +43,12 @@ export const ShowcaseCard = ({
 export default function ShowcaseSection() {
   return (
     <div className="showcase-section bg-gray-100 dark:bg-stone-600">
-      <div className="wrapper container-4xl p-6 py-[40px]">
+      <div className="wrapper container-4xl p-6 py-[70px] pb-[90px]">
         <div className="mx-auto max-w-2xl text-center">
           <Text
             as="h1"
             size="h1"
-            className="text-3xl text-foreground-secondary "
+            className="text-3xl text-foreground-secondary"
           >
             Showcase.
           </Text>
@@ -54,7 +57,7 @@ export default function ShowcaseSection() {
             gallery to view the full collection.
           </p>
         </div>
-        <div className="mt-5 flex justify-center gap-5 overflow-x-auto">
+        <div className="mt-5 flex gap-5 overflow-x-auto py-6 md:justify-center">
           <ShowcaseCard
             title="Velvet"
             description="An e-commerce site for skincare products"
@@ -67,6 +70,15 @@ export default function ShowcaseSection() {
             url="velvet/ben-dev10.github.io"
             imgUrl="velvet-cover.png"
           />
+        </div>
+        <div className="flex justify-center">
+          <a
+            href="#"
+            className="flex items-center gap-1 text-blue-500 hover:underline"
+          >
+            Got to gallery{" "}
+            <ArrowUpRight size={16} className="text-blue-500/70" />
+          </a>
         </div>
       </div>
     </div>
