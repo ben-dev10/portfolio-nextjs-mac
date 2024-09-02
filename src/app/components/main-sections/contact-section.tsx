@@ -10,7 +10,7 @@ export const ContactMedium = ({
   icon: React.ReactNode;
 }) => {
   return (
-    <a href="#" className="flex flex-col items-center gap-1 max-w-[100px]">
+    <a href="#" className="flex max-w-[100px] flex-col items-center gap-1">
       {icon}
       <p className="text-center">{text}</p>
     </a>
@@ -20,7 +20,7 @@ export const ContactMedium = ({
 export default function ContactSection() {
   return (
     <div
-      className="about-section bg-gray-100 dark:bg-transparent py-10"
+      className="about-section bg-gray-100 py-10 dark:bg-transparent"
       style={{
         backgroundImage: "url(doodle.png)",
         backgroundSize: "150px",
@@ -30,7 +30,7 @@ export default function ContactSection() {
         <div className="wrapper container-4xl my-10 p-6 py-[70px] text-gray-100/90">
           <div className="mx-auto max-w-2xl text-center">
             <Text as="h1" size="h1" className="text-3xl text-gray-50">
-              Love to work with me? Let's talk.
+              Love to work with me? Let&apos;s talk.
             </Text>
             <p className="">
               You can choose to reach me by filling the forms in this section or

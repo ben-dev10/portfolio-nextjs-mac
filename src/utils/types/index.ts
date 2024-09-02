@@ -1,5 +1,4 @@
 // FIXME: fix object type errors
-/* eslint-disable @typescript-eslint/ban-types */
 import React from "react";
 
 export type PropsOf<

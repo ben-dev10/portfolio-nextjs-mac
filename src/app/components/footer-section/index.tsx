@@ -6,8 +6,9 @@ import { ExternalLink } from "lucide-react";
 import { footerLinksData } from "./footerLinksData";
 import nardLogoLarge from "public/logos/nard-logo-1.svg";
 import { useContext } from "react";
-import { AppContext } from "../../store";
+// import { AppContext } from "../../store";
 import nardLogoDark from "public/logos/nard-logo-1-darkmode.svg";
+import { useAppContext } from "@/utils/hooks/useAppContext";
 
 export const FooterLinks = () => {
   return (
@@ -40,11 +41,11 @@ export const FooterLinks = () => {
 };
 
 export const FooterHeader = () => {
-  const context = useContext(AppContext);
-  if (!context) {
-    throw new Error("useContext must be used within an AppProvider");
-  }
-  const { theme } = context;
+  // const context = useContext(AppContext);
+  // if (!context) {
+  //   throw new Error("useContext must be used within an AppProvider");
+  // }
+  // const { theme } = context;
 
   return (
     <div>
@@ -118,13 +119,15 @@ export const DesktopFooter = () => {
 
 // TODO: dark theme optimize
 export default function Footer() {
-  const context = useContext(AppContext);
+  // const context = useContext(AppContext);
 
-  if (!context) {
-    throw new Error("useContext must be used within an AppProvider");
-  }
+  // if (!context) {
+  //   throw new Error("useContext must be used within an AppProvider");
+  // }
 
-  const { theme } = context;
+  // const { theme } = context;
+
+  const { theme } = useAppContext();
 
   return (
     <div className="wrapper border-t border-border bg-white dark:bg-zinc-900">

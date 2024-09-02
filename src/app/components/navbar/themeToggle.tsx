@@ -1,29 +1,39 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
+import useTheme from "@/utils/hooks/useTheme";
 
-export default function ThemeToggle({
-  theme,
-  setTheme,
-}: {
-  theme: string | null;
-  setTheme: (arg0: string) => void;
-}) {
+export default function ThemeToggle(
+  {
+    // theme,
+    // setTheme,
+  }: {
+    // theme: string | null;
+    // setTheme: (arg0: string) => void;
+  },
+) {
   /* moved theme state to parent component*/
-  function handleToggleTheme() {
-    const html = document.documentElement;
-    const currentTheme = html.classList.contains("light") ? "light" : "dark";
+  // function handleToggleTheme() {
+  //   const html = document.documentElement;
+  //   const currentTheme = html.classList.contains("light") ? "light" : "dark";
 
-    const newTheme = currentTheme === "light" ? "dark" : "light";
-    setTheme(newTheme);
+  //   const newTheme = currentTheme === "light" ? "dark" : "light";
+  //   setTheme(newTheme);
 
-    localStorage.setItem("portfolio-theme", newTheme);
-    html.classList.remove(currentTheme);
-    html.classList.add(newTheme);
-  }
+  //   localStorage.setItem("portfolio-theme", newTheme);
+  //   html.classList.remove(currentTheme);
+  //   html.classList.add(newTheme);
+  // }
+
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <button
-      onClick={handleToggleTheme}
+      // onClick={handleToggleTheme}
+      onClick={toggleTheme}
       className="max-w-max rounded-full p-1 text-foreground hover:bg-gray-100 dark:hover:bg-neutral-500/20"
     >
       <AnimatePresence>

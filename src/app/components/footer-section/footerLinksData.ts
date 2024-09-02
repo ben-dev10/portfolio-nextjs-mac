@@ -55,7 +55,7 @@ export const footerLinksData = [
           externalink: false,
         },
         {
-          id: "2iii",
+          id: "2iv",
           text: "2D",
           link: "https://3d",
           special: false,

@@ -66,8 +66,8 @@ export default function FeaturesSection() {
             size="h1"
             className="text-3xl text-foreground-secondary"
           >
-            If you are looking for a quick, and performant website, then you've
-            come to the right place.
+            If you are looking for a quick, and performant website, then
+            you&apos;ve come to the right place.
           </Text>
           <p className="">
             I can help you get your website online in a flash, all you have to
@@ -75,7 +75,7 @@ export default function FeaturesSection() {
           </p>
         </div>
         <div className="mt-5">
-          <p className="mb-5 text-center">What's Included</p>
+          <p className="mb-5 text-center">What&apos;s Included</p>
           <div className="flex gap-5 overflow-x-scroll md:justify-center">
             <FeatureCard
               url="url(bg-designs/bg-design-1.png)"

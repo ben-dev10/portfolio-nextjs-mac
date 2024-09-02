@@ -12,6 +12,7 @@ import ThemeToggle from "./themeToggle";
 import navLogo from "public/logos/nard-logo-1.svg";
 import navLogoDark from "public/logos/nard-logo-1-darkmode.svg";
 import SocialLinkIcons from "./social-icons";
+import { useAppContext } from "@/utils/hooks/useAppContext";
 
 function Logo({ theme }: { theme: string | null }) {
   const isDarkMode = theme === "dark";
@@ -107,7 +108,8 @@ function CV() {
 
 // TODO: experimental expandable navbar
 export default function NavBar() {
-  const [theme, setTheme] = useState(localStorage.getItem("portfolio-theme"));
+  // const [theme, setTheme] = useState(localStorage.getItem("portfolio-theme"));
+  const { theme, setTheme } = useAppContext();
 
   useTheme();
   return (
@@ -122,7 +124,10 @@ export default function NavBar() {
           <div className="ml-2 hidden md:block">
             <SocialLinkIcons GitHub />
           </div>
-          <ThemeToggle theme={theme} setTheme={setTheme} />
+          <ThemeToggle 
+          // theme={theme} 
+          // setTheme={setTheme} 
+          />
         </div>
       </div>
       <div className="secondary-nav bg-slate-300/[.15] dark:bg-slate-700/[.15] md:hidden">

@@ -1,5 +1,6 @@
 import { Text } from "@/ui/text/text";
 import { ArrowUpRight, ArrowUpRightFromSquareIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export const ShowcaseCard = ({
@@ -16,6 +17,13 @@ export const ShowcaseCard = ({
   return (
     <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-white shadow-sm dark:border-neutral-500/50 dark:bg-neutral-800">
       <div className="img">
+        {/* <Image
+          src={imgUrl}
+          alt="product-image"
+          width={}
+          height={}
+          className="rounded-tl-md rounded-tr-md"
+        /> */}
         <img
           src={imgUrl}
           alt="product-image"

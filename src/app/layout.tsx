@@ -25,7 +25,7 @@ export default function RootLayout({
     <AppProvider>
       <html lang="en" className="dark">
         <body
-          className={` bg-background text-13px text-foreground min-h-screen`}
+          className={`min-h-screen bg-background text-13px text-foreground`}
         >
           <header className="sticky top-0 z-[999]">
             <NavBar />

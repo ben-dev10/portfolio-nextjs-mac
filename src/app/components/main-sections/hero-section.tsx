@@ -4,10 +4,18 @@ import hero1 from "public/hero-images/hero-1.png";
 import hero2 from "public/hero-images/hero-2.png";
 import hero3 from "public/hero-images/hero-3.png";
 import HeroCtaButton from "@/ui/hero-cta-btn";
+import bgGrid from "../../../../public/bg-grid-main.svg";
 
 export default function HeroSection() {
   return (
     <div className="hero-section wrapper container-4xl relative overflow-hidden p-5 pb-0 pt-[60px]">
+      {/* <Image
+        src="bg-grid-main.svg"
+        alt="grid background image"
+        width={bgGrid}
+        height={bgGrid}
+        className="bg-grid absolute left-[50%] -z-10 -translate-x-1/2 -translate-y-[16%] opacity-70 dark:opacity-[.15]"
+      /> */}
       <img
         src="bg-grid-main.svg"
         className="bg-grid absolute left-[50%] -z-10 -translate-x-1/2 -translate-y-[16%] opacity-70 dark:opacity-[.15]"
