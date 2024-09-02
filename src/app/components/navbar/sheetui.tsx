@@ -1,5 +1,10 @@
 import { Button } from "@/ui/button";
-import { Sheet, SheetContent, SheetFooter, SheetTrigger } from "@/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetFooter,
+  SheetTrigger,
+} from "@/ui/sheet";
 import Link from "next/link";
 import { useState } from "react";
 import { Building2, GalleryVertical, Home } from "lucide-react";
@@ -17,7 +22,7 @@ export function SheetUI() {
     <div className="">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <Button className="pl-0 px-2 py-[6px] shadow-none bg-transparent hover:bg-gray-100 dark:hover:bg-neutral-500/10">
+          <Button className="bg-transparent px-2 py-[6px] pl-0 shadow-none hover:bg-gray-100 dark:hover:bg-neutral-500/10">
             <svg
               width="18"
               height="18"
@@ -51,16 +56,16 @@ export function SheetUI() {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="w-full md:hidden absolute top-[0px] h-screen md:max-w-full flex flex-col bg-white/[.88] dark:bg-black/[.84] backdrop-blur-[20px] p-5 pt-3 pl-3"
+          className="absolute top-[0px] z-[9999] flex h-screen w-full flex-col bg-white/[.88] p-5 pl-3 pt-3 backdrop-blur-[20px] dark:bg-black/[.84] md:hidden md:max-w-full"
         >
-          <div className="links gap-3 flex flex-col text-[13px] max-w-[450px] w-[90%] mx-auto mb-auto">
-            <div className="icons pb-2 flex justify-end">
+          <div className="links mx-auto mb-auto flex w-[90%] max-w-[450px] flex-col gap-3 text-[13px]">
+            <div className="icons flex justify-end pb-2">
               <div className="absolute right-[25px]">
                 <SocialLinkIcons GitHub X />
               </div>
             </div>
-            <div className="w-full line-wrapper absolute left-0 mt-8 h-1  ">
-              <div className="line w-[100%] mx-auto border-b border-border" />
+            <div className="line-wrapper absolute left-0 mt-8 h-1 w-full">
+              <div className="line mx-auto w-[100%] border-b border-border" />
             </div>
             <div onClick={handleClick} className="mt-8 space-y-3">
               <Link href="/" className="sheet-link">
@@ -78,8 +83,8 @@ export function SheetUI() {
             </div>
           </div>
 
-          <SheetFooter className="bg-gray-50 dark:bg-black/30 p-8 absolute bottom-0 left-0 w-full border-t border-border">
-            <div className="flex gap-1 w-full items-center ring ring-accent/50 p-2 px-3 rounded-md bg-gradient-to-r from-accent to-purple-900 ">
+          <SheetFooter className="absolute bottom-0 left-0 w-full border-t border-border bg-gray-50 p-8 dark:bg-black/30">
+            <div className="flex w-full items-center gap-1 rounded-md bg-gradient-to-r from-accent to-purple-900 p-2 px-3 ring ring-accent/50">
               <Image
                 src={nardLogo}
                 className="mr-1"

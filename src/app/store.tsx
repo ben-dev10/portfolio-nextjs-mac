@@ -19,7 +19,6 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const savedTheme = localStorage.getItem("portfolio-theme");
     if (savedTheme) {
       setTheme(savedTheme);
-      console.log(savedTheme)
     }
   }, []);
 
@@ -29,20 +28,7 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     // Apply theme
     document.documentElement.classList.remove("dark", "light");
     document.documentElement.classList.add(theme);
-      console.log(theme);
-    
   }, [theme]);
-
-  // useEffect(() => {
-  // Access localStorage only on the client side
-  //   const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
-  //   setTheme(savedTheme);
-  // }, []);
-
-  // useEffect(() => {
-  // Update localStorage when theme changes
-  //   localStorage.setItem("portfolio-theme", theme);
-  // }, [theme]);
 
   return (
     <AppContext.Provider value={{ theme, setTheme, count, setCount }}>

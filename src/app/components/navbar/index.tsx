@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Download } from "lucide-react";
@@ -108,7 +107,6 @@ function CV() {
 
 // TODO: experimental expandable navbar
 export default function NavBar() {
-  // const [theme, setTheme] = useState(localStorage.getItem("portfolio-theme"));
   const { theme, setTheme } = useAppContext();
 
   useTheme();
@@ -124,10 +122,7 @@ export default function NavBar() {
           <div className="ml-2 hidden md:block">
             <SocialLinkIcons GitHub />
           </div>
-          <ThemeToggle 
-          // theme={theme} 
-          // setTheme={setTheme} 
-          />
+          <ThemeToggle />
         </div>
       </div>
       <div className="secondary-nav bg-slate-300/[.15] dark:bg-slate-700/[.15] md:hidden">

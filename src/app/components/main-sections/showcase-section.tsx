@@ -17,16 +17,11 @@ export const ShowcaseCard = ({
   return (
     <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-white shadow-sm dark:border-neutral-500/50 dark:bg-neutral-800">
       <div className="img">
-        {/* <Image
+        <Image
           src={imgUrl}
           alt="product-image"
-          width={}
-          height={}
-          className="rounded-tl-md rounded-tr-md"
-        /> */}
-        <img
-          src={imgUrl}
-          alt="product-image"
+          width={397.1}
+          height={238.84}
           className="rounded-tl-md rounded-tr-md"
         />
       </div>
@@ -77,13 +72,13 @@ export default function ShowcaseSection() {
             title="Velvet"
             description="An e-commerce site for skincare products"
             url="velvet/ben-dev10.github.io"
-            imgUrl="velvet-cover.png"
+            imgUrl="/velvet-cover.png"
           />
           <ShowcaseCard
             title="Velvet"
             description="An e-commerce site for skincare products"
             url="velvet/ben-dev10.github.io"
-            imgUrl="velvet-cover.png"
+            imgUrl="/velvet-cover.png"
           />
         </div>
         <div className="flex justify-center">
