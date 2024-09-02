@@ -27,7 +27,7 @@ export default function RootLayout({
         <body
           className={` bg-background text-13px text-foreground min-h-screen`}
         >
-          <header>
+          <header className="sticky top-0 z-[999]">
             <NavBar />
           </header>
           <>{children}</>

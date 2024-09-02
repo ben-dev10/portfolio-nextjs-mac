@@ -10,7 +10,7 @@ export default function HeroSection() {
     <div className="hero-section wrapper container-4xl relative overflow-hidden p-5 pb-0 pt-[60px]">
       <img
         src="bg-grid-main.svg"
-        className="bg-grid absolute left-[50%] -z-10 -translate-x-1/2 -translate-y-[16%] dark:opacity-[.15]"
+        className="bg-grid absolute left-[50%] -z-10 -translate-x-1/2 -translate-y-[16%] opacity-70 dark:opacity-[.15]"
       />
       <div className="mx-auto mb-10 max-w-2xl text-center">
         <Text as="h1" size="h1" className="text-3xl text-foreground-secondary">

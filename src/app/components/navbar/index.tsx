@@ -111,7 +111,7 @@ export default function NavBar() {
 
   useTheme();
   return (
-    <div className="header-wrapper sticky top-0 border-b border-border bg-gray-50 dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
+    <div className="header-wrapper border-b border-border bg-gray-50 dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
       <div className="container-4xl h-[60px] w-full">
         <div className="primary-nav flex items-center gap-x-3 p-2 px-4 pl-[7px] pt-3 md:pt-4">
           <MenuIcon />

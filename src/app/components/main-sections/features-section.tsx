@@ -58,7 +58,7 @@ export const FeatureCard = ({
 
 export default function FeaturesSection() {
   return (
-    <div className="features-section bg-white dark:bg-stone-600">
+    <div className="features-section bg-white dark:bg-neutral-900">
       <div className="wrapper container-4xl p-6 py-[70px]">
         <div className="mx-auto max-w-2xl text-center">
           <Text
@@ -111,11 +111,9 @@ export default function FeaturesSection() {
                 <Megaphone size={17} className="text-slate-100" />
               </div>
               <p className="mt-auto text-12px font-bold text-blue-100">
-                <p>Video Editing</p>
+                Video Editing
               </p>
-              <p className="font-bold">
-                <p>Editing, grading...</p>
-              </p>
+              <p className="font-bold">Editing, grading...</p>
             </div>
           </div>
         </div>

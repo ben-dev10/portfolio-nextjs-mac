@@ -11,10 +11,10 @@ import nardLogoDark from "public/logos/nard-logo-1-darkmode.svg";
 
 export const FooterLinks = () => {
   return (
-    <div className="footer-links flex flex-wrap md:flex-nowrap gap-8 gap-x-10 md:gap-x-8">
+    <div className="footer-links flex flex-wrap gap-8 gap-x-10 md:flex-nowrap md:gap-x-8">
       {footerLinksData.map((dataMain) => (
         <div key={dataMain.id}>
-          <p className="font-bold text-14px mb-[6px]">{dataMain.header}</p>
+          <p className="mb-[6px] text-14px font-bold">{dataMain.header}</p>
           <ul className="flex flex-col gap-1">
             {dataMain["links"].map((data) => (
               <a
@@ -54,7 +54,7 @@ export const FooterHeader = () => {
           Crafting stunning and performant digital experiences, One Pixel at a
           time. Built by
           <span className="">
-            <a href="#" className="text-accent underline pl-1">
+            <a href="#" className="pl-1 text-accent underline">
               nard
             </a>{" "}
             from
@@ -63,7 +63,7 @@ export const FooterHeader = () => {
               width={13}
               height={13}
               alt="Ghana Flag"
-              className=" ml-1 inline"
+              className="ml-1 inline"
             />
           </span>
         </p>
@@ -78,7 +78,7 @@ export const FooterData = ({ className }: { className?: string }) => {
       <div className="mb-2">
         <p>&copy; 2024 - 2024. All rights reserved. </p>
       </div>
-      <div className="mt-3 ">
+      <div className="mt-3">
         <SocialLinkIcons GitHub X />
       </div>
     </div>
@@ -87,7 +87,7 @@ export const FooterData = ({ className }: { className?: string }) => {
 
 export const MobileFooter = () => {
   return (
-    <div className="md:hidden mt-3 pb-10">
+    <div className="mt-3 pb-10 md:hidden">
       <FooterHeader />
       <FooterData className="mt-8" />
 
@@ -100,7 +100,7 @@ export const MobileFooter = () => {
 
 export const DesktopFooter = () => {
   return (
-    <div className="hidden md:flex gap-[55px]">
+    <div className="hidden gap-[55px] md:flex">
       <div className="flex flex-col justify-between">
         <div className="max-w-[355px]">
           <FooterHeader />
@@ -127,12 +127,12 @@ export default function Footer() {
   const { theme } = context;
 
   return (
-    <div className="wrapper bg-white dark:bg-zinc-900 border-t border-border">
-      <div className=" group container-4xl p-5 mt-4 relative overflow-hidden pb-[120px] md:pb-[160px]">
-        <div className="absolute  bottom-[-70px] md:bottom-[-100px] right-[5%]">
+    <div className="wrapper border-t border-border bg-white dark:bg-zinc-900">
+      <div className="container-4xl group relative mt-4 overflow-hidden p-5 pb-[120px] md:pb-[160px]">
+        <div className="absolute bottom-[-70px] right-[5%] md:bottom-[-100px]">
           <Image
             src={theme === "light" ? nardLogoLarge : nardLogoDark}
-            className="w-[150px] md:w-[200px] grayscale group-hover:grayscale-0 transition duration-400"
+            className="duration-400 w-[150px] grayscale transition group-hover:grayscale-0 md:w-[200px]"
             width={nardLogoLarge}
             alt="large nard brand logo"
           />
