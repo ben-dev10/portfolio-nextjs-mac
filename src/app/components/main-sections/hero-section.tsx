@@ -18,13 +18,13 @@ export default function HeroSection() {
       <div className="mx-auto mb-10 max-w-2xl text-center">
         <Text as="h1" size="h1" className="text-3xl text-foreground-secondary">
           Crafting stunning and performant UIs, One{" "}
-          <span className="[font-family:Pixelify_Sans]">pixel</span> at a time.
+          <span className="font-pixelify">pixel</span> at a time.
         </Text>
         <p className="">
           My name is Ben, and I love to design and build stunning, performant
           and secure UIs for various platforms, but primarily for websites.
         </p>
-        <div className="ctas my-8 flex justify-center">
+        <div className="ctas my-8 mt-5">
           <HeroCtaButton />
         </div>
       </div>

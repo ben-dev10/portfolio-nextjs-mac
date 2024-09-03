@@ -5,17 +5,15 @@ import SocialLinkIcons from "../navbar/social-icons";
 import { ExternalLink } from "lucide-react";
 import { footerLinksData } from "./footerLinksData";
 import nardLogoLarge from "public/logos/nard-logo-1.svg";
-import { useContext } from "react";
-// import { AppContext } from "../../store";
 import nardLogoDark from "public/logos/nard-logo-1-darkmode.svg";
-import { useAppContext } from "@/utils/hooks/useAppContext";
+import { useTheme } from "@/app/store";
 
 export const FooterLinks = () => {
   return (
     <div className="footer-links flex flex-wrap gap-8 gap-x-10 md:flex-nowrap md:gap-x-8">
       {footerLinksData.map((dataMain) => (
         <div key={dataMain.id}>
-          <p className="mb-[6px] text-14px font-bold">{dataMain.header}</p>
+          <p className="mb-[6px] text-14px font-[600]">{dataMain.header}</p>
           <ul className="flex flex-col gap-1">
             {dataMain["links"].map((data) => (
               <a
@@ -41,12 +39,6 @@ export const FooterLinks = () => {
 };
 
 export const FooterHeader = () => {
-  // const context = useContext(AppContext);
-  // if (!context) {
-  //   throw new Error("useContext must be used within an AppProvider");
-  // }
-  // const { theme } = context;
-
   return (
     <div>
       <div className="">
@@ -61,10 +53,10 @@ export const FooterHeader = () => {
             from
             <Image
               src="/gh-flag.png"
-              width={13}
-              height={13}
+              width={14}
+              height={14}
               alt="Ghana Flag"
-              className="ml-1 inline"
+              className="ml-1 inline rounded-full border border-blue-100 shadow"
             />
           </span>
         </p>
@@ -119,15 +111,7 @@ export const DesktopFooter = () => {
 
 // TODO: dark theme optimize
 export default function Footer() {
-  // const context = useContext(AppContext);
-
-  // if (!context) {
-  //   throw new Error("useContext must be used within an AppProvider");
-  // }
-
-  // const { theme } = context;
-
-  const { theme } = useAppContext();
+  const { theme } = useTheme();
 
   return (
     <div className="wrapper border-t border-border bg-white dark:bg-zinc-900">

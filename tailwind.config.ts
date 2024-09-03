@@ -3,11 +3,12 @@ import { novelUIPlugin } from "./src/utils/lib/novel-ui-tw-plugin";
 // import { shadcnPlugin } from "./src/utils/lib/shadcn-ui-tw-plugin";
 
 const config: Config = {
-  darkMode:["class"],
+  darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -23,9 +24,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        // "gilroy-regular": "Gilroy-Regular",
+        // "gilroy-semibold": "Gilroy-SemiBold",
+        // "gilroy-bold": "Gilroy-Bold",
+        gilroy: "Gilroy",
+        pixelify: "pixelify",
+      },
     },
   },
-    
+
   plugins: [novelUIPlugin],
 };
 export default config;

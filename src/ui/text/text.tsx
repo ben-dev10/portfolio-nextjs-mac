@@ -16,7 +16,7 @@ const textStyles = cva("w-full", {
       base: "text-base",
       lg: "text-lg",
       xl: "text-xl",
-      h1: "text-xl font-bold mb-2",
+      h1: "text-xl font-[600] mb-2",
       h2: "text-lg font-bold mb-1",
       h3: "text-base font-bold mb-1",
       h4: "text-[14px] font-bold mb-1",

@@ -1,13 +1,11 @@
 import { Text } from "@/ui/text/text";
-import { AppWindowIcon, HardHat, Megaphone, Paintbrush } from "lucide-react";
-
-export const NewUI = () => {
-  return (
-    <div className="badge ml-auto flex h-[20px] w-[40px] justify-center rounded-[3px] bg-green-400 text-white">
-      New
-    </div>
-  );
-};
+import {
+  AppWindowIcon,
+  HardHat,
+  Megaphone,
+  Paintbrush,
+  Sparkle,
+} from "lucide-react";
 
 export const FeatureCard = ({
   url,
@@ -49,8 +47,10 @@ export const FeatureCard = ({
           {title}
         </span>
       </p>
-      <p className="font-bold">
-        <span className={`${x ? "text-black/80" : ""}`}>{description}</span>
+      <p className="font-bold leading-tight">
+        <span className={`${x ? "text-white-100 text-shadow" : ""}`}>
+          {description}
+        </span>
       </p>
     </div>
   );
@@ -75,7 +75,10 @@ export default function FeaturesSection() {
           </p>
         </div>
         <div className="mt-5">
-          <p className="mb-5 text-center">What&apos;s Included</p>
+          <p className="mx-auto mb-5 flex max-w-max justify-center gap-1 rounded-full bg-accent/10 p-1 px-3 text-center text-accent dark:bg-violet-500/30 dark:text-purple-400">
+            <Sparkle size={16} className="text-purple-900 dark:text-purple-500" />
+            What&apos;s Included
+          </p>
           <div className="flex gap-5 overflow-x-scroll md:justify-center">
             <FeatureCard
               url="url(bg-designs/bg-design-1.png)"
@@ -113,7 +116,9 @@ export default function FeaturesSection() {
               <p className="mt-auto text-12px font-bold text-blue-100">
                 Video Editing
               </p>
-              <p className="font-bold">Editing, grading...</p>
+              <p className="font-bold leading-tight">
+                Editing, Motion design...
+              </p>
             </div>
           </div>
         </div>

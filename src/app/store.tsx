@@ -1,6 +1,6 @@
 "use client";
 import React, { createContext, useState, useEffect, ReactNode } from "react";
-
+import { useContext } from "react";
 interface AppState {
   count: number;
   theme: string;
@@ -19,6 +19,8 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const savedTheme = localStorage.getItem("portfolio-theme");
     if (savedTheme) {
       setTheme(savedTheme);
+    } else {
+      localStorage.setItem("theme", theme);
     }
   }, []);
 
@@ -26,7 +28,7 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     // Save theme preferences whenever it changes
     localStorage.setItem("portfolio-theme", theme);
     // Apply theme
-    document.documentElement.classList.remove("dark", "light");
+    document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(theme);
   }, [theme]);
 
@@ -35,6 +37,19 @@ const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       {children}
     </AppContext.Provider>
   );
+};
+
+// useTheme for context
+export const useTheme = () => {
+  const context = useContext(AppContext);
+  if (!context) {
+    throw new Error("useTheme must be used within an AppProvider");
+  }
+
+  return {
+    theme: context.theme,
+    setTheme: context.setTheme,
+  };
 };
 
 export { AppContext, AppProvider };

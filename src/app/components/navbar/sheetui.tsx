@@ -22,7 +22,7 @@ export function SheetUI() {
     <div className="">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
-          <Button className="bg-transparent px-2 py-[6px] pl-0 shadow-none hover:bg-gray-100 dark:hover:bg-neutral-500/10">
+          <Button className="bg-transparent px-2 py-[6px] shadow-none hover:bg-gray-100 dark:hover:bg-neutral-500/10">
             <svg
               width="18"
               height="18"

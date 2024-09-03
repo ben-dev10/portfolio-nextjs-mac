@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Download } from "lucide-react";
-import useTheme from "@/utils/hooks/useTheme";
 import { Button } from "@/ui/button";
 import { SheetUI } from "./sheetui";
 import { usePathname } from "next/navigation";
@@ -11,7 +10,7 @@ import ThemeToggle from "./themeToggle";
 import navLogo from "public/logos/nard-logo-1.svg";
 import navLogoDark from "public/logos/nard-logo-1-darkmode.svg";
 import SocialLinkIcons from "./social-icons";
-import { useAppContext } from "@/utils/hooks/useAppContext";
+import { useTheme } from "@/app/store";
 
 function Logo({ theme }: { theme: string | null }) {
   const isDarkMode = theme === "dark";
@@ -47,7 +46,7 @@ function Links() {
               href={link.path}
               id="navLink"
               className={`relative hover:text-accent ${
-                isActive(link.path) ? "active font-bold text-accent" : ""
+                isActive(link.path) ? "active font-[600] text-accent" : ""
               }`}
             >
               {link.name}
@@ -107,9 +106,8 @@ function CV() {
 
 // TODO: experimental expandable navbar
 export default function NavBar() {
-  const { theme, setTheme } = useAppContext();
+  const { theme } = useTheme();
 
-  useTheme();
   return (
     <div className="header-wrapper border-b border-border bg-gray-50 dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
       <div className="container-4xl h-[60px] w-full">

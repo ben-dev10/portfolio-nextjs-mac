@@ -26,7 +26,7 @@ export const ShowcaseCard = ({
         />
       </div>
       <div className="flex flex-col p-3">
-        <h3 className="text-[16px] font-bold text-accent dark:text-violet-400">
+        <h3 className="text-[16px] font-[600] text-accent dark:text-violet-400">
           {title}
         </h3>
         <p>{description}</p>
@@ -53,7 +53,7 @@ export const ShowcaseCard = ({
 export default function ShowcaseSection() {
   return (
     <div className="showcase-section bg-gray-100 dark:bg-transparent">
-      <div className="wrapper container-4xl p-6 py-[70px] pb-[90px]">
+      <div className="wrapper container-4xl p-6 py-[70px] pt-[60px]">
         <div className="mx-auto max-w-2xl text-center">
           <Text
             as="h1"

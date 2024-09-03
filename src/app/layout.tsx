@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/app/components/navbar";
 import Footer from "@/app/components/footer-section";
 import { AppProvider } from "./store";
+import '@/utils/styles/fonts.css'
 // import { Inter } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -25,7 +26,7 @@ export default function RootLayout({
     <AppProvider>
       <html lang="en" className="dark">
         <body
-          className={`min-h-screen bg-background text-13px text-foreground`}
+          className={`min-h-screen bg-background text-13px text-foreground font-gilroy`}
         >
           <header className="sticky top-0 z-[999]">
             <NavBar />

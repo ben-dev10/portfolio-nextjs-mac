@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import useTheme from "@/utils/hooks/useTheme";
+import { useTheme } from "@/app/store";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
