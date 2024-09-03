@@ -1,28 +1,28 @@
 /* font grouping; using the same font names for different font-face (weight) declarations  */
 @font-face {
   font-family: "Gilroy";
-  src: url("src/utils/fonts/Gilroy-ExtraBold.ttf");
+  src: url("../fonts/Gilroy-ExtraBold.ttf");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("src/utils/fonts/Gilroy-SemiBold.ttf");
+  src: url("../fonts/Gilroy-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("src/utils/fonts/Gilroy-Regular.ttf");
+  src: url("../fonts/Gilroy-Regular.ttf");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Pixelify";
-  src: url("src/utils/fonts/PixelifySans-VariableFont_wght.ttf");
+  src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
