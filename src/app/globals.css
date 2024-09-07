@@ -153,3 +153,7 @@
 .text-shadow{
   text-shadow: 2px 2px 1px rgba(155, 155, 155, 0.231);
 }
+
+.pill{
+  @apply px-3 p-1 bg-black text-white rounded-full
+}

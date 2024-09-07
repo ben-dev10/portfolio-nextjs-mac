@@ -46,7 +46,7 @@ const textStyles = cva("w-full", {
   },
   defaultVariants: {
     size: "base",
-    align: "left",
+    align: "center",
   },
 });
 

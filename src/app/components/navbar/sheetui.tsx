@@ -56,7 +56,7 @@ export function SheetUI() {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="absolute top-[0px] z-[9999] flex h-screen w-full flex-col bg-white/[.88] p-5 pl-3 pt-3 backdrop-blur-[20px] dark:bg-black/[.84] md:hidden md:max-w-full"
+          className="fixed top-[0px] left-[0px] bottom-0 z-[9999] flex h-screen w-full flex-col bg-white/[.88] p-5 pl-3 pt-3 backdrop-blur-[20px] dark:bg-black/[.84] md:hidden md:max-w-full"
         >
           <div className="links mx-auto mb-auto flex w-[90%] max-w-[450px] flex-col gap-3 text-[13px]">
             <div className="icons flex justify-end pb-2">

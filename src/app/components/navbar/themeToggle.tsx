@@ -1,17 +1,21 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { useTheme } from "@/app/store";
+import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+  const themeToggle = () => {
+    if (theme === "dark") {
+      return setTheme("light");
+    } else {
+      return setTheme("dark");
+    }
   };
 
   return (
     <button
-      onClick={toggleTheme}
+      onClick={themeToggle}
       className="max-w-max rounded-full p-1 text-foreground hover:bg-gray-100 dark:hover:bg-neutral-500/20"
     >
       <AnimatePresence>

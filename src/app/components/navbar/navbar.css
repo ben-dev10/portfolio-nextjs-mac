@@ -1,23 +1,37 @@
 .sheet-link {
-    @apply p-2 flex items-center gap-2 hover:bg-accent/90 hover:text-white rounded-md transition-colors delay-100
+  @apply flex items-center gap-2 rounded-md p-2 transition-colors delay-100 hover:bg-accent/90 hover:text-white;
 }
 
 .active::after {
-    content: "";
-    height: 6px;
-    width: 6px;
-    border-radius: 999px;
-    background-color: hsl(var(--accent));
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 999px;
+  background-color: hsl(var(--accent));
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .size-md {
-    width: 18px
+  width: 18px;
 }
 
 .size-lg {
-    width: 24px
+  width: 24px;
+}
+
+/* svg classes */
+.cls-1a {
+  fill: url(#linear-gradient);
+}
+.cls-2a {
+  fill: url(#linear-gradient-2);
+}
+.cls-1b {
+  fill: url(#linear-gradient);
+}
+.cls-2b {
+  fill: url(#linear-gradient-2);
 }

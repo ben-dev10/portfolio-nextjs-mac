@@ -10,18 +10,22 @@ import ThemeToggle from "./themeToggle";
 import navLogo from "public/logos/nard-logo-1.svg";
 import navLogoDark from "public/logos/nard-logo-1-darkmode.svg";
 import SocialLinkIcons from "./social-icons";
-import { useTheme } from "@/app/store";
+import { useTheme } from "next-themes";
+import { Nard1LogoDark, Nard1LogoLight } from "./ui/nardlogos";
+import { useEffect } from "react";
 
-function Logo({ theme }: { theme: string | null }) {
-  const isDarkMode = theme === "dark";
+function Logo() {
+  const { theme } = useTheme();
   return (
-    <div className="mx-auto md:ml-0">
+    <div className="relative mx-auto size-[27px] md:ml-0">
       <Link href={"/"}>
         <Image
-          src={isDarkMode ? navLogoDark : navLogo}
+          src={theme === "dark" ? navLogoDark : navLogo}
           width={navLogo}
           alt="navbar logo"
         />
+        {/* <Nard1LogoDark />
+        <Nard1LogoLight /> */}
       </Link>
     </div>
   );
@@ -113,7 +117,7 @@ export default function NavBar() {
       <div className="container-4xl h-[60px] w-full">
         <div className="primary-nav flex items-center gap-x-3 p-2 px-4 pl-[7px] pt-3 md:pt-4">
           <MenuIcon />
-          <Logo theme={theme} />
+          <Logo />
           <Availability status="available" className="mr-2 hidden md:flex" />
           <CV />
           <Links />
