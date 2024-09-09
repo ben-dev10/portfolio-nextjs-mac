@@ -20,7 +20,8 @@ export default function AboutSection() {
         <div className="mt-5">
           <div className="bento-grid mx-auto grid max-w-[800px] grid-cols-3 gap-2 sm:grid-rows-[250px_270px]">
             {/* 1 */}
-            <div className="c1 col-span-3 border p-5 dark:border-gray-400/50 sm:col-span-2 sm:row-span-1">
+            <div className="c1 relative col-span-3 border p-5 dark:border-gray-400/50 sm:col-span-2 sm:row-span-1">
+              <div className="gradient-bar absolute left-0 top-0 h-full w-[6px] bg-gradient-to-b from-blue-300 via-cyan-300 to-fuchsia-300" />
               <h3 className="text-[22px] font-[600] text-black/90 dark:text-white/90">
                 Hello 👋 once again, welcome to my portfolio
               </h3>
@@ -31,19 +32,21 @@ export default function AboutSection() {
                   web design and full-stack development,graphic, desktop and
                   mobile app development, 3D modelling and animation (Blender);
                 </span>
-                and soon to master
+              </p>
+              <p className="mt-4">
+                And soon to master:
                 <span className="text-black dark:text-white">
-                  Video game development, video editing, AR and VR with Unreal
+                  {" "}
+                  video game development, video editing, AR and VR with Unreal
                   Engine/Unity/Apple AR SDK
                 </span>
-                .
               </p>
             </div>
             {/* 2 */}
             <div className="c1 col-span-3 grid border p-5 dark:border-gray-400/50 sm:col-span-1 sm:place-items-center">
               <div className="flex flex-col gap-1 sm:items-start md:mx-auto">
-                <div>
-                  <Briefcase className="mb-3 text-black dark:text-white" />
+                <div className="mb-3">
+                  <Briefcase className="mb-2 text-black dark:text-white" />
                   <ul className="">
                     <li className="flex gap-1">
                       <CircleCheck
@@ -55,7 +58,7 @@ export default function AboutSection() {
                   </ul>
                 </div>
                 <div>
-                  <GraduationCap className="mb-3 text-black dark:text-white" />
+                  <GraduationCap className="mb-2 text-black dark:text-white" />
                   <ul className="">
                     <li className="flex gap-1">
                       <CircleCheck

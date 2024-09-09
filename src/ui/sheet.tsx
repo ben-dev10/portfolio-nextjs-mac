@@ -64,7 +64,7 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="focus:ring-ring data-[state=open]:bg-secondary absolute left-4 top-3 rounded-sm opacity-70 outline-none ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
+      <SheetPrimitive.Close className="focus:ring-transparent data-[state=open]:bg-secondary rounded-full size-5 absolute left-4 top-3 opacity-70 outline-none ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
         {/* Replaced shadcn default close icon <X className="h-4 w-4" /> */}
         <XCloseIcon size="md" />
         <span className="sr-only hidden">Close</span>

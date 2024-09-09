@@ -27,7 +27,7 @@ export default function RootLayout({
     <AppProvider>
       <html lang="en" className="dark" suppressHydrationWarning>
         <body
-          className={`min-h-screen bg-background font-gilroy text-13px text-foreground`}
+          className={`min-h-screen bg-background font-gilroy text-14px text-foreground`}
         >
           <ThemeProvider
             attribute="class"

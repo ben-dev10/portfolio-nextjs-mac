@@ -28,7 +28,7 @@ export const FeatureCard = ({
         backgroundImage: url,
         backgroundPosition: "center center",
       }}
-      className="feature-card flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-white"
+      className="feature-card flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-white text-13px"
     >
       <div className="flex">
         <div className="icon grid size-[40px] place-items-center rounded-md bg-white">
@@ -42,12 +42,12 @@ export const FeatureCard = ({
           )}
         </div>
       </div>
-      <p className="mt-auto text-12px font-bold text-blue-100">
+      <p className="mt-auto text-12px font-[600] text-blue-100 text-shadow">
         <span className={`${x ? "text-shadow text-yellow-100" : ""}`}>
           {title}
         </span>
       </p>
-      <p className="font-bold leading-tight">
+      <p className="font-[600] leading-tight">
         <span className={`${x ? "text-white-100 text-shadow" : ""}`}>
           {description}
         </span>
@@ -107,16 +107,16 @@ export default function FeaturesSection() {
                 backgroundImage: "url(bg-designs/bg-design-4.png)",
                 backgroundPosition: "center center",
               }}
-              className="feature-card flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-white"
+              className="feature-card text-13px flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-white"
             >
               <div className="badge flex justify-center rounded-md border border-gray-400 bg-black/80 p-1 px-2 text-white">
                 Coming Soon
                 <Megaphone size={17} className="text-slate-100" />
               </div>
-              <p className="mt-auto text-12px font-bold text-blue-100">
+              <p className="mt-auto text-12px font-[600] text-blue-100">
                 Video Editing
               </p>
-              <p className="font-bold leading-tight">
+              <p className="font-[600] leading-tight">
                 Editing, Motion design...
               </p>
             </div>

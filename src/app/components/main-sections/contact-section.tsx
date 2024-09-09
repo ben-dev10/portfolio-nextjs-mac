@@ -12,7 +12,7 @@ export const ContactMedium = ({
   return (
     <a href="#" className="flex max-w-[100px] flex-col items-center gap-1">
       {icon}
-      <p className="text-center">{text}</p>
+      <p className="text-center text-13px">{text}</p>
     </a>
   );
 };
@@ -33,8 +33,8 @@ export default function ContactSection() {
               Love to work with me? Let&apos;s talk.
             </Text>
             <p className="">
-              You can choose to reach me by filling the forms in this section or
-              any preferred medium below
+              You can choose to reach me through any preferred medium below,
+              click on them to redirect to related applications.
             </p>
           </div>
           <div className="mt-5 flex justify-center gap-4">
