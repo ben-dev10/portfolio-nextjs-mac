@@ -19,14 +19,9 @@ export const ContactMedium = ({
 
 export default function ContactSection() {
   return (
-    <div
-      className="about-section bg-gray-100 py-10 dark:bg-transparent"
-      style={{
-        backgroundImage: "url(doodle.png)",
-        backgroundSize: "150px",
-      }}
-    >
-      <div className="bg-black">
+    <div className="about-section relative bg-gray-100 py-10 dark:bg-transparent">
+      <div className="doodle-bg" />
+      <div className="relative z-[2] bg-black">
         <div className="wrapper container-4xl my-10 p-6 py-[70px] text-gray-100/90">
           <div className="mx-auto max-w-2xl text-center">
             <Text as="h1" size="h1" className="text-3xl text-gray-50">

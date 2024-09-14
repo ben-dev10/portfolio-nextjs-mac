@@ -13,7 +13,7 @@ export default function HeroCtaButton() {
       </button>
       <Link
         href="/gallery"
-        className="p-[6px] px-3 text-accent rounded-full flex items-center gap-1 bg-violet-100 ring ring-violet-200/70 hover:ring-violet-300"
+        className="p-[6px] px-3 text-accent rounded-full flex items-center gap-1 border bg-white dark:bg-gray-600/50 shadow-md"
       >
         See my work
         <ArrowUpRight size={16} />

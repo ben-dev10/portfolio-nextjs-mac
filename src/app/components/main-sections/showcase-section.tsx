@@ -15,7 +15,7 @@ export const ShowcaseCard = ({
   imgUrl: string;
 }) => {
   return (
-    <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-white shadow-sm dark:border-neutral-500/50 dark:bg-neutral-800">
+    <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-card text-card-foreground shadow-sm ">
       <div className="img">
         <Image
           src={imgUrl}
