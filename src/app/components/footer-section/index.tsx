@@ -114,7 +114,7 @@ export default function Footer() {
   const { theme } = useTheme();
 
   return (
-    <div className="wrapper border-t border-border bg-white dark:bg-zinc-900">
+    <div id="footerSection" className="wrapper border-t border-border bg-white dark:bg-zinc-900">
       <div className="container-4xl group relative mt-4 overflow-hidden p-5 pb-[120px] md:pb-[160px]">
         <div className="absolute bottom-[-70px] right-[5%] md:bottom-[-100px]">
           <Image

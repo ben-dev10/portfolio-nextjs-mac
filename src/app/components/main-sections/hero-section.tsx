@@ -1,9 +1,10 @@
-import { Text } from "@/ui/text/text";
 import Image from "next/image";
 import hero1 from "public/hero-images/hero-1.png";
 import hero2 from "public/hero-images/hero-2.png";
 import hero3 from "public/hero-images/hero-3.png";
 import HeroCtaButton from "@/ui/hero-cta-btn";
+import SectionHeading from "../section-heading";
+import { gradientText } from "@/utils/ui-helpers";
 
 export default function HeroSection() {
   return (
@@ -15,15 +16,28 @@ export default function HeroSection() {
         height={366.01}
         className="bg-grid absolute left-[50%] -z-10 -translate-x-1/2 -translate-y-[16%] opacity-70 dark:opacity-[.15]"
       />
+      <div className="gradient-blob absolute -z-20 left-[50%] h-[400px] w-[540px] -translate-x-1/2 dark:opacity-40" />
       <div className="mx-auto mb-10 max-w-2xl text-center">
-        <Text as="h1" size="h1" className="text-3xl text-foreground-secondary">
-          Crafting stunning and performant UIs, One{" "}
-          <span className="font-pixelify">pixel</span> at a time.
-        </Text>
-        <p className="">
-          My name is Ben, and I love to design and build stunning, performant
-          and secure UIs for various platforms, but primarily for websites.
-        </p>
+        <SectionHeading
+          hElement="h1"
+          className="text-3xl"
+          subheading="My name is Ben, and I love to design and build stunning, performant
+          and secure UIs for various platforms, but primarily for websites."
+          title={
+            <span>
+              Crafting stunning and performant UIs, One{" "}
+              <span
+                className={`font-pixelify !font-[500] dark:![background-image:linear-gradient(to_bottom_right,#DEBBF3,#8DB4FF)]`}
+                style={gradientText(
+                  "linear-gradient(to bottom right, #8DB4FF, #BA64EE)",
+                )}
+              >
+                pixel
+              </span>{" "}
+              at a time.
+            </span>
+          }
+        />
         <div className="ctas my-8 mt-5">
           <HeroCtaButton />
         </div>

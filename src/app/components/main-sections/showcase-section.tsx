@@ -2,6 +2,7 @@ import { Text } from "@/ui/text/text";
 import { ArrowUpRight, ArrowUpRightFromSquareIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import SectionHeading from "../section-heading";
 
 export const ShowcaseCard = ({
   title,
@@ -15,7 +16,7 @@ export const ShowcaseCard = ({
   imgUrl: string;
 }) => {
   return (
-    <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-card text-card-foreground shadow-sm ">
+    <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-card text-card-foreground shadow-sm">
       <div className="img">
         <Image
           src={imgUrl}
@@ -55,17 +56,13 @@ export default function ShowcaseSection() {
     <div className="showcase-section bg-gray-100 dark:bg-transparent">
       <div className="wrapper container-4xl p-6 py-[70px] pt-[60px]">
         <div className="mx-auto max-w-2xl text-center">
-          <Text
-            as="h1"
-            size="h1"
-            className="text-3xl text-foreground-secondary"
-          >
-            Showcase.
-          </Text>
-          <p className="">
-            Get to see some of my works, crated over the years. Visit the
-            gallery to view the full collection.
-          </p>
+          <SectionHeading
+            hElement="h1"
+            className="text-3xl"
+            title=" Showcase."
+            subheading="Get to see some of my works, crated over the years. Visit the
+            gallery to view the full collection."
+          />
         </div>
         <div className="mt-5 flex gap-5 overflow-x-auto py-6 md:justify-center">
           <ShowcaseCard
@@ -84,10 +81,13 @@ export default function ShowcaseSection() {
         <div className="flex justify-center">
           <Link
             href={"/gallery"}
-            className="flex items-center gap-1 text-blue-500 hover:underline"
+            className="flex items-center gap-1 text-blue-500 hover:underline dark:text-blue-300"
           >
-            Got to gallery{" "}
-            <ArrowUpRight size={16} className="text-blue-500/70" />
+            Go to gallery{" "}
+            <ArrowUpRight
+              size={16}
+              className="text-blue-500/70 dark:text-blue-300"
+            />
           </Link>
         </div>
       </div>

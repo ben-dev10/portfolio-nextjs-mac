@@ -1,20 +1,19 @@
 import { Text } from "@/ui/text/text";
 import { Briefcase, CircleCheck, GraduationCap, Luggage } from "lucide-react";
 import Image from "next/image";
+import SectionHeading from "../section-heading";
 
 export default function AboutSection() {
   return (
     <div className="about-section bg-white dark:bg-neutral-900">
       <div className="wrapper container-4xl p-6 py-[70px]">
         <div className="mx-auto max-w-2xl text-center">
-          <Text
-            as="h1"
-            size="h1"
-            className="text-foreground-secondary text-3xl"
-          >
-            About Me
-          </Text>
-          <p className="">Get to know about the person behind @nard.</p>
+          <SectionHeading
+            hElement="h1"
+            className="text-3xl"
+            title="About Me"
+            subheading="Get to know about the person behind @nard."
+          />
         </div>
         {/* Bento grid */}
         <div className="mt-5">
@@ -85,7 +84,7 @@ export default function AboutSection() {
             <div className="c1 col-span-3 border p-5 sm:col-span-1 sm:row-span-1">
               <div className="mb-5">
                 <div className="lineTitle mb-2 flex items-center gap-3">
-                  <div className="title font-[700] text-accent">
+                  <div className="title font-[700] text-accent dark:text-violet-300">
                     Web design and full-stack development
                   </div>
                   <div className="line grow border-b" />
@@ -98,7 +97,7 @@ export default function AboutSection() {
               </div>
               <div>
                 <div className="lineTitle mb-2 flex items-center gap-3">
-                  <div className="title font-[700] text-accent">
+                  <div className="title font-[700] text-accent dark:text-violet-300">
                     Graphic Design
                   </div>
                   <div className="line grow border-b" />
