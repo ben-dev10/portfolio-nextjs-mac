@@ -13,6 +13,7 @@ import SocialLinkIcons from "./social-icons";
 import { useTheme } from "next-themes";
 import { Nard1LogoDark, Nard1LogoLight } from "./ui/nardlogos";
 import { useEffect } from "react";
+import TooltipUI from "../TooltipUI";
 
 function Logo() {
   const { theme } = useTheme();
@@ -122,7 +123,11 @@ export default function NavBar() {
           <CV />
           <Links />
           <div className="ml-2 hidden md:block">
-            <SocialLinkIcons GitHub />
+            <TooltipUI
+              trigger={<SocialLinkIcons GitHub />}
+              content="github.io/ben-dev10"
+              sideOffset={20}
+            />
           </div>
           <ThemeToggle />
         </div>

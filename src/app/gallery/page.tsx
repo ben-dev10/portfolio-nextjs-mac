@@ -3,27 +3,7 @@ import SectionHeading from "../components/section-heading";
 import WebTabContent from "./sections/web-tabcontent";
 import DesignTabContent from "./sections/design-tabcontent";
 import EngineeringTabContent from "./sections/engineering-tabcontent";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-
-const VideoToolTip = () => {
-  return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <span> Video</span>
-        </TooltipTrigger>
-        <TooltipContent>
-          <p>Coming Soon</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
-  );
-};
+import TooltipUI from "../components/TooltipUI";
 
 export default function Gallery() {
   return (
@@ -52,8 +32,8 @@ export default function Gallery() {
                 <TabsTrigger value="web">Web</TabsTrigger>
                 <TabsTrigger value="design">Design</TabsTrigger>
                 <TabsTrigger value="engineering">Engineering</TabsTrigger>
-                <TabsTrigger value="video" inert>
-                  <VideoToolTip />
+                <TabsTrigger value="video">
+                  <TooltipUI content="Coming soon" trigger="Video" />
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="web">

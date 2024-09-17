@@ -56,7 +56,7 @@ export const FooterHeader = () => {
               width={14}
               height={14}
               alt="Ghana Flag"
-              className="ml-1 inline rounded-full border border-blue-100 shadow"
+              className="ml-1 inline rounded-full border aspect-square object-cover border-blue-100 shadow"
             />
           </span>
         </p>

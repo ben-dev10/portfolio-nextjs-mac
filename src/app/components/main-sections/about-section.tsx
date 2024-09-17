@@ -1,4 +1,3 @@
-import { Text } from "@/ui/text/text";
 import { Briefcase, CircleCheck, GraduationCap, Luggage } from "lucide-react";
 import Image from "next/image";
 import SectionHeading from "../section-heading";
