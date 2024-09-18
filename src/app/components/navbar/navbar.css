@@ -7,7 +7,8 @@
   height: 6px;
   width: 6px;
   border-radius: 999px;
-  background-color: hsl(var(--accent));
+  /* background-color: hsl(var(--accent)); */
+  background-color: #a78bfa;
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -26,6 +27,22 @@
 .cls-1a {
   fill: url(#linear-gradient);
 }
+/* - */
+.cls-1 {
+  fill: url(#linear-gradient);
+}
+
+.cls-2 {
+  fill: url(#linear-gradient-2);
+}
+
+.cls-3 {
+  fill: none;
+  stroke: #666;
+  stroke-miterlimit: 10;
+}
+
+/* -- */
 .cls-2a {
   fill: url(#linear-gradient-2);
 }
@@ -34,4 +51,11 @@
 }
 .cls-2b {
   fill: url(#linear-gradient-2);
+}
+
+/* --- */
+
+.cls-4 {
+  /* fill: url(#linear-gradient-3); */
+  @apply fill-black stroke-[1px] dark:fill-blue-50 dark:stroke-zinc-200/50;
 }

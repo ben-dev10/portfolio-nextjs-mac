@@ -4,7 +4,7 @@ import SectionHeading from "../section-heading";
 
 export default function AboutSection() {
   return (
-    <div className="about-section bg-white dark:bg-neutral-900">
+    <div className="about-section bg-white dark:bg-[#17171A]">
       <div className="wrapper container-4xl p-6 py-[70px]">
         <div className="mx-auto max-w-2xl text-center">
           <SectionHeading

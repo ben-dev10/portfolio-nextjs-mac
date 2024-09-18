@@ -1,19 +1,19 @@
 "use client";
 import Image from "next/image";
-import nardLogo from "public/logos/nard-logo-2b.svg";
 import SocialLinkIcons from "../navbar/social-icons";
 import { ExternalLink } from "lucide-react";
 import { footerLinksData } from "./footerLinksData";
 import nardLogoLarge from "public/logos/nard-logo-1.svg";
 import nardLogoDark from "public/logos/nard-logo-1-darkmode.svg";
 import { useTheme } from "next-themes";
+import { NardLogo2 } from "../navbar/ui/nardlogos";
 
 export const FooterLinks = () => {
   return (
     <div className="footer-links flex flex-wrap gap-8 gap-x-10 md:flex-nowrap md:gap-x-8">
       {footerLinksData.map((dataMain) => (
         <div key={dataMain.id}>
-          <p className="mb-[6px] text-14px font-[600]">{dataMain.header}</p>
+          <p className="mb-[6px] text-14px font-[600] text-zinc-900 dark:text-zinc-200">{dataMain.header}</p>
           <ul className="flex flex-col gap-1">
             {dataMain["links"].map((data) => (
               <a
@@ -42,7 +42,7 @@ export const FooterHeader = () => {
   return (
     <div>
       <div className="">
-        <Image src={nardLogo} width={nardLogo} alt="Brand Logo" />
+        <NardLogo2 className="w-[90px]" />
         <p className="mt-3">
           Crafting stunning and performant digital experiences, One Pixel at a
           time. Built by
@@ -114,7 +114,7 @@ export default function Footer() {
   const { theme } = useTheme();
 
   return (
-    <div id="footerSection" className="wrapper border-t border-border bg-white dark:bg-zinc-900">
+    <div id="footerSection" className="wrapper border-t border-border bg-white dark:bg-zinc-950">
       <div className="container-4xl group relative mt-4 overflow-hidden p-5 pb-[120px] md:pb-[160px]">
         <div className="absolute bottom-[-70px] right-[5%] md:bottom-[-100px]">
           <Image

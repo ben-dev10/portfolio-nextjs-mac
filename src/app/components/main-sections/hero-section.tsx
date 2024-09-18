@@ -16,7 +16,7 @@ export default function HeroSection() {
         height={366.01}
         className="bg-grid absolute left-[50%] -z-10 -translate-x-1/2 -translate-y-[16%] opacity-70 dark:opacity-[.15]"
       />
-      <div className="gradient-blob absolute -z-20 left-[50%] h-[400px] w-[540px] -translate-x-1/2 dark:opacity-40" />
+      <div className="gradient-blob absolute left-[50%] -z-20 h-[400px] w-[540px] -translate-x-1/2 dark:opacity-40" />
       <div className="mx-auto mb-10 max-w-2xl text-center">
         <SectionHeading
           hElement="h1"
@@ -48,19 +48,19 @@ export default function HeroSection() {
             src={hero2}
             width={406}
             alt="hero-image-2"
-            className="back md:w-506 absolute shadow-xl shadow-gray-400"
+            className="back md:w-506 absolute shadow-xl shadow-gray-400 dark:shadow-sm"
           />
           <Image
             src={hero1}
             width={318}
             alt="hero-image-1"
-            className="middle md:w-418 absolute left-[-70px] top-10 mx-auto shadow-xl shadow-pink-200"
+            className="middle md:w-418 absolute left-[-70px] top-10 mx-auto shadow-xl shadow-pink-200 dark:shadow-pink-400 dark:shadow-sm"
           />
           <Image
             src={hero3}
             width={321}
             alt="hero-image-3"
-            className="front md:w-421 absolute left-[70px] top-20 shadow-xl shadow-blue-200"
+            className="front md:w-421 absolute left-[70px] top-20 shadow-xl shadow-blue-200 dark:shadow-sm"
           />
         </div>
       </div>

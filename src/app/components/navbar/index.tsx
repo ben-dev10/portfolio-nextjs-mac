@@ -1,32 +1,22 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { Download } from "lucide-react";
 import { Button } from "@/ui/button";
 import { SheetUI } from "./sheetui";
 import { usePathname } from "next/navigation";
 import "./navbar.css";
 import ThemeToggle from "./themeToggle";
-import navLogo from "public/logos/nard-logo-1.svg";
-import navLogoDark from "public/logos/nard-logo-1-darkmode.svg";
 import SocialLinkIcons from "./social-icons";
 import { useTheme } from "next-themes";
-import { Nard1LogoDark, Nard1LogoLight } from "./ui/nardlogos";
-import { useEffect } from "react";
+import { NardLogo1, NardLogo2 } from "./ui/nardlogos";
 import TooltipUI from "../TooltipUI";
 
 function Logo() {
   const { theme } = useTheme();
   return (
-    <div className="relative mx-auto size-[27px] md:ml-0">
+    <div className="relative mx-auto size-[27px] md:ml-2">
       <Link href={"/"}>
-        <Image
-          src={theme === "dark" ? navLogoDark : navLogo}
-          width={navLogo}
-          alt="navbar logo"
-        />
-        {/* <Nard1LogoDark />
-        <Nard1LogoLight /> */}
+        <NardLogo1 />
       </Link>
     </div>
   );
@@ -50,8 +40,8 @@ function Links() {
             <Link
               href={link.path}
               id="navLink"
-              className={`relative hover:text-accent ${
-                isActive(link.path) ? "active font-[600] text-accent" : ""
+              className={`relative hover:text-accent dark:hover:text-violet-200 ${
+                isActive(link.path) ? "active font-[600] text-violet-400" : ""
               }`}
             >
               {link.name}
@@ -111,8 +101,6 @@ function CV() {
 
 // TODO: experimental expandable navbar
 export default function NavBar() {
-  const { theme } = useTheme();
-
   return (
     <div className="header-wrapper border-b border-border bg-gray-50 dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
       <div className="container-4xl h-[60px] w-full">

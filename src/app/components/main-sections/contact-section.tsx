@@ -6,12 +6,19 @@ import { gradientText } from "@/utils/ui-helpers";
 export const ContactMedium = ({
   text,
   icon,
+  url,
 }: {
   text: string;
   icon: React.ReactNode;
+  url?: string;
 }) => {
   return (
-    <a href="#" className="flex max-w-[100px] flex-col items-center gap-1">
+    <a
+      href={`${url}`}
+      className="flex max-w-[100px] flex-col items-center gap-1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {icon}
       <p className="text-center text-13px">{text}</p>
     </a>
@@ -28,7 +35,7 @@ export default function ContactSection() {
             <Text
               as="h1"
               size="h1"
-              className="text-3xl "
+              className="text-3xl"
               style={gradientText(
                 "linear-gradient(to bottom, #E5E7EB 20%, #FAFAFA, #E5E7EB 80%)",
               )}
@@ -44,10 +51,12 @@ export default function ContactSection() {
             <ContactMedium
               text="WhatsApp Call or Chat"
               icon={<FaWhatsapp className="size-[32px] text-green-400" />}
+              url="https://wa.me/0541467464"
             />
             <ContactMedium
               text="Email"
               icon={<MailCheckIcon className="size-[32px] text-blue-400" />}
+              url="mailto:calvinklien025@gmail.con"
             />
             <ContactMedium
               text="Calender: Book an appointment"

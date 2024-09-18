@@ -29,7 +29,7 @@ export const FeatureCard = ({
         backgroundImage: url,
         backgroundPosition: "center center",
       }}
-      className="feature-card flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-13px text-white"
+      className="feature-card shadow-lg flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-13px text-white"
     >
       <div className="flex">
         <div className="icon grid size-[40px] place-items-center rounded-md bg-white">
@@ -59,26 +59,27 @@ export const FeatureCard = ({
 
 export default function FeaturesSection() {
   return (
-    <div className="features-section bg-white dark:bg-neutral-900">
+    <div className="features-section bg-white dark:bg-[#17171A]">
       <div className="wrapper container-4xl p-6 py-[70px]">
         <div className="mx-auto max-w-2xl text-center">
           <SectionHeading
             hElement="h1"
             className="text-3xl"
-            title=" If you are looking for a quick, and performant website, then you've come to the right place."
+            title="Looking for web and design services? Look no further."
             subheading=" I can help you get your website online in a flash, all you have to
             do is to brief me on what you want and leave the rest to me."
           />
         </div>
         <div className="mt-5">
-          <p className="mx-auto mb-5 flex max-w-max justify-center gap-1 rounded-full bg-accent/10 p-1 px-3 text-center text-accent dark:bg-violet-500/30 dark:text-purple-400">
+          <p className="mx-auto mb-5 flex max-w-max justify-center gap-1 rounded-full bg-accent/10 p-1 px-3 text-center 
+          text-accent dark:bg-violet-700/20 dark:text-purple-300">
             <Sparkle
               size={16}
-              className="text-purple-900 dark:text-purple-500"
+              className="text-purple-900 dark:text-purple-400"
             />
             What&apos;s Included
           </p>
-          <div className="flex gap-5 overflow-x-scroll md:justify-center">
+          <div className="flex gap-5 overflow-x-scroll pb-8 md:justify-center">
             <FeatureCard
               url="url(bg-designs/bg-design-1.png)"
               title="Web Design"
@@ -106,7 +107,7 @@ export default function FeaturesSection() {
                 backgroundImage: "url(bg-designs/bg-design-4.png)",
                 backgroundPosition: "center center",
               }}
-              className="feature-card flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-13px text-white"
+              className="feature-card flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-13px text-white shadow-lg"
             >
               <div className="badge flex justify-center rounded-md border border-gray-400 bg-black/80 p-1 px-2 text-white">
                 Coming Soon
