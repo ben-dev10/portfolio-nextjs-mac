@@ -2,9 +2,9 @@ import { Tags } from "lucide-react";
 
 function Pill({ text }: { text: string }) {
   return (
-    <p className="rounded-sm bg-zinc-100 px-2 text-violet-400 dark:bg-zinc-700 dark:text-violet-300">
+    <button className="rounded-sm bg-zinc-100 px-2 text-violet-400 dark:bg-zinc-700 dark:text-violet-300">
       #{text}
-    </p>
+    </button>
   );
 }
 

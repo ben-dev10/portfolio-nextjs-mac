@@ -9,14 +9,18 @@ export const ShowcaseCard = ({
   description,
   url,
   imgUrl,
+  typescript,
+  framerMotion,
 }: {
   title: string;
   description: string;
   url: string;
   imgUrl: string;
+  typescript?: boolean;
+  framerMotion?: boolean;
 }) => {
   return (
-    <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-card text-card-foreground shadow-sm">
+    <div className="showcase-card aspect-[4/3] w-[400px] shrink-0 rounded-md border bg-card shadow-sm dark:bg-[#13151A]">
       <div className="img">
         <Image
           src={imgUrl}
@@ -32,9 +36,19 @@ export const ShowcaseCard = ({
         </h3>
         <p>{description}</p>
         <div className="mt-2 flex">
-          <div className="tech-stack flex gap-1">
-            <p>TS</p>
-            <p>React</p>
+          <div className="tech-stack flex items-center gap-1">
+            <div className="icon-sprite react-icon h-[27px] w-[27px] scale-[.75] [background-position:0px_0px]" />
+            <div className="icon-sprite tw-css-icon h-[27px] w-[27px] scale-[.9] [background-position:-108px_2px]" />
+            {typescript ? (
+              <div className="icon-sprite ts-icon h-[27px] w-[27px] scale-[.75] [background-position:-38px_0px]" />
+            ) : (
+              ""
+            )}
+            {framerMotion ? (
+              <div className="icon-sprite framer-motion-icon h-[27px] w-[27px] scale-[] [background-position:-70px_3px]" />
+            ) : (
+              ""
+            )}
           </div>
           <div className="link ml-auto">
             <a
@@ -70,10 +84,11 @@ export default function ShowcaseSection() {
             description="An e-commerce site for skincare products"
             url="velvet/ben-dev10.github.io"
             imgUrl="/velvet-cover.png"
+            framerMotion
           />
           <ShowcaseCard
-            title="Velvet"
-            description="An e-commerce site for skincare products"
+            title="CPS"
+            description="A simple clone of WPS Office"
             url="velvet/ben-dev10.github.io"
             imgUrl="/velvet-cover.png"
           />

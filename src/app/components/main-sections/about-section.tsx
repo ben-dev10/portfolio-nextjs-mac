@@ -20,24 +20,23 @@ export default function AboutSection() {
             {/* 1 */}
             <div className="c1 relative col-span-3 border p-5 sm:col-span-2 sm:row-span-1">
               <div className="gradient-bar absolute left-0 top-0 h-full w-[6px] bg-gradient-to-b from-blue-300 via-cyan-300 to-fuchsia-300" />
-              <h3 className="text-[22px] font-[600] text-black/90 dark:text-white/90">
-                Hello 👋 once again, welcome to my portfolio
+              <h3 className="mb-3 text-[22px] font-[600] text-black/90 dark:text-zinc-300">
+                👋 Welcome once again
               </h3>
               <p className="">
-                My interest in programming and technology in general are
-                expansive including{" "}
-                <span className="text-black dark:text-gray-300">
-                  web design and full-stack development,graphic, desktop and
-                  mobile app development, 3D modelling and animation (Blender);
-                </span>
+                <span className="ml-3">My</span> love for programming, was
+                sparked somewhat by curiosity during the pandemic when I had
+                more than enough time to do other things, that was when I knew,
+                I loved instructing computers.{" "}
               </p>
               <p className="mt-4">
-                And soon to master:
-                <span className="text-black dark:text-gray-300">
-                  {" "}
-                  video game development, video editing, AR and VR with Unreal
-                  Engine/Unity/Apple AR SDK
-                </span>
+                All I can say is that, this love will never fade away, From then till now, 
+                I have worked tirelessly to perfect this skill;
+                built countless projects and learnt many concepts, but this is
+                just the beginning ...
+                <a href="" className="ml-1 text-blue-500 dark:text-blue-200 hover:underline">
+                  continue reading
+                </a>
               </p>
             </div>
             {/* 2 */}
@@ -49,7 +48,7 @@ export default function AboutSection() {
                     <li className="flex gap-3">
                       <CircleCheck
                         size={17}
-                        className="ml-2 shrink-0 text-accent"
+                        className="ml-2 shrink-0 text-accent dark:text-violet-300"
                       />{" "}
                       4yrs experience in web development
                     </li>
@@ -61,7 +60,7 @@ export default function AboutSection() {
                     <li className="flex gap-3">
                       <CircleCheck
                         size={17}
-                        className="ml-2 shrink-0 text-accent"
+                        className="ml-2 shrink-0 text-accent dark:text-violet-300"
                       />
                       <span className="font-[600]">
                         BSc. Mechanical Engineering{" "}
@@ -71,7 +70,7 @@ export default function AboutSection() {
                     <li className="flex gap-3">
                       <CircleCheck
                         size={17}
-                        className="ml-2 shrink-0 text-accent"
+                        className="ml-2 shrink-0 text-accent dark:text-violet-300"
                       />
                       Achimota School
                     </li>
@@ -112,7 +111,7 @@ export default function AboutSection() {
             <div className="c1 col-span-3 flex gap-3 border bg-black p-6 text-white sm:col-span-2 sm:row-span-1">
               <div className="left w-[40%]">
                 <div className="fav-libraries">
-                  <h5 className="mb-2 text-[10px] font-[600] text-gray-400">
+                  <h5 className="mb-2 text-[9px] font-[600] text-gray-400">
                     FAVOURITE LIBRARIES AND FRAMEWORKS
                   </h5>
                   <Image
@@ -120,10 +119,11 @@ export default function AboutSection() {
                     alt="favourite libraries"
                     width={264}
                     height={114}
+                    className="min-w-[130px]"
                   />
                 </div>
                 <div className="mt-7">
-                  <h5 className="mb-2 text-[10px] font-[600] text-gray-400">
+                  <h5 className="mb-2 text-[9px] font-[600] text-gray-400">
                     FAVOURITE TOOLS
                   </h5>
                   <Image

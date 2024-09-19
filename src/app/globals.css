@@ -137,3 +137,9 @@
   background-size: auto 500px;
   background-repeat: no-repeat;
 }
+
+.icon-sprite {
+  background-image: url("/icon-sprite.png");
+  background-repeat: no-repeat;
+  /* background-size: 135px 16px; */
+}
