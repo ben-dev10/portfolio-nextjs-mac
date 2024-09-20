@@ -14,9 +14,9 @@ export default function Work() {
             <div className="my-10 max-w-lg">
               <SectionHeading
                 hElement="h1"
-                title="Gallery"
-                subheading="This page is where I showcase a collection of all my past 
-                works and where future works too will be displayed."
+                title="Work"
+                subheading="All biography and work-related information about me can be found here. 
+                Feel free to hit me up with work offers."
                 align="left"
               />
             </div>

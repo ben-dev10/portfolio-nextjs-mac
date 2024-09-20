@@ -1,23 +1,39 @@
 import { Button } from "@/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetTrigger,
-} from "@/ui/sheet";
+import { Sheet, SheetContent, SheetFooter, SheetTrigger } from "@/ui/sheet";
 import Link from "next/link";
 import { useState } from "react";
-import { Building2, GalleryVertical, Home } from "lucide-react";
+import { BookCopyIcon, Building2, GalleryVertical, Home } from "lucide-react";
 import "./navbar.css";
 import nardLogo from "public/logos/nard-logo-1.svg";
 import Image from "next/image";
 import SocialLinkIcons from "./social-icons";
+import { usePathname } from "next/navigation";
+import { NardLogo2 } from "./ui/nardlogos";
 
 export function SheetUI() {
+  const SheetNavLinks = [
+    { id: 1, name: "Home", path: "/", icon: <Home size={16} /> },
+    {
+      id: 2,
+      name: "Gallery",
+      path: "/gallery",
+      icon: <GalleryVertical size={16} />,
+    },
+    { id: 3, name: "Work", path: "/work", icon: <Building2 size={16} /> },
+    {
+      id: 4,
+      name: "Resources",
+      path: "/resources",
+      icon: <BookCopyIcon size={16} />,
+    },
+  ];
+
   const [open, setOpen] = useState(false);
   const handleClick = () => {
     setOpen(false);
   };
+  const pathname = usePathname();
+  const isActive = (path: string) => path === pathname;
   return (
     <div className="">
       <Sheet open={open} onOpenChange={setOpen}>
@@ -56,7 +72,7 @@ export function SheetUI() {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="fixed top-[0px] left-[0px] bottom-0 z-[9999] flex h-screen w-full flex-col bg-white/[.88] p-5 pl-3 pt-3 backdrop-blur-[20px] dark:bg-black/[.84] md:hidden md:max-w-full"
+          className="fixed bottom-0 left-[0px] top-[0px] z-[9999] flex h-screen w-full flex-col bg-white/[.88] p-5 pl-3 pt-3 backdrop-blur-[20px] dark:bg-black/[.84] md:hidden md:max-w-full"
         >
           <div className="links mx-auto mb-auto flex w-[90%] max-w-[450px] flex-col gap-3 text-[13px]">
             <div className="icons flex justify-end pb-2">
@@ -68,31 +84,36 @@ export function SheetUI() {
               <div className="line mx-auto w-[100%] border-b border-border" />
             </div>
             <div onClick={handleClick} className="mt-8 space-y-3">
-              <Link href="/" className="sheet-link">
-                <Home size={16} />
-                Home
-              </Link>
-              <Link href="/gallery" className="sheet-link">
-                <GalleryVertical size={16} />
-                Gallery
-              </Link>
-              <Link href="/work" className="sheet-link">
-                <Building2 size={16} />
-                Work
-              </Link>
+              {SheetNavLinks.map((link) => (
+                <li key={link.id} className="list-none">
+                  <Link
+                    href={link.path}
+                    id="navLink"
+                    className={`sheet-link hover:text-accent dark:hover:text-violet-200 ${
+                      isActive(link.path)
+                        ? "active bg-violet-500 font-[600] text-white"
+                        : ""
+                    }`}
+                  >
+                    {link.icon}
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </div>
+            <div className="mt-[30%] border-t p-3">
+              <NardLogo2 className="w-[100px]" />
+              <p className="mt-1">2024 - present</p>
             </div>
           </div>
 
-          <SheetFooter className="absolute bottom-0 left-0 w-full border-t border-border bg-gray-50 p-8 dark:bg-black/30">
-            <div className="flex w-full items-center gap-1 rounded-md bg-gradient-to-r from-accent to-purple-900 p-2 px-3 ring ring-accent/50">
-              <Image
-                src={nardLogo}
-                className="mr-1"
-                width={20}
-                alt="nard logo"
-              />
-              <p className="text-white">Nard Designs</p>
-            </div>
+          <SheetFooter
+            style={{
+              // backgroundImage: "url(bottom-bar-gradient.png)",
+            }}
+            className="absolute sheet-footer bottom-0 left-0 w-full h-[20px]"
+          >
+            <div className=""></div>
           </SheetFooter>
         </SheetContent>
       </Sheet>
