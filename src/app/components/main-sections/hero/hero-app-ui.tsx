@@ -48,7 +48,7 @@ export function SignUpFormHeroUI({ className }: { className?: string }) {
 export function DashboardHeroUI({ className }: { className?: string }) {
   return (
     <div
-      className={`min-h-[300px] min-w-[350px] text-zinc-500 rounded-sm bg-zinc-50 p-5 text-[12px] ${className}`}
+      className={`min-h-[300px] min-w-[350px] rounded-sm bg-zinc-50 p-5 text-[12px] text-zinc-500 ${className}`}
     >
       <div className="flex">
         <div className="mb-4">
@@ -56,14 +56,14 @@ export function DashboardHeroUI({ className }: { className?: string }) {
           <p>Welcome back Alex </p>
         </div>
         <div className="ml-auto">
-            <div className="size-[30px] rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 border-white border-[4px] shadow-md shadow-blue-200" />
+          <div className="size-[30px] rounded-full border-[4px] border-white bg-gradient-to-br from-blue-500 to-cyan-400 shadow-md shadow-blue-200" />
         </div>
       </div>
       <div className="flex gap-2">
         <div className="metrics w-[150px] border-t-[3px] border-zinc-300/60 bg-zinc-100 p-3 pb-2 pt-2">
-          <small>Today's prices</small>
+          <small>Today&apos;s prices</small>
           <p className="text-[18px] font-[700]">$20,000</p>
-          <p className="mt-1 text-green-500 flex items-center ">
+          <p className="mt-1 flex items-center text-green-500">
             +25%
             <span className="inline-block">
               <ArrowUpRight size={15} />
@@ -73,7 +73,7 @@ export function DashboardHeroUI({ className }: { className?: string }) {
         <div className="metrics w-[150px] border-t-[3px] border-zinc-300/60 bg-zinc-100 p-3 pb-2 pt-2">
           <small>Stock prices</small>
           <p className="text-[18px] font-[700]">$18,650</p>
-          <p className="mt-1 text-red-500 flex items-center ">
+          <p className="mt-1 flex items-center text-red-500">
             +25%
             <span className="inline-block">
               <ArrowDownLeft size={15} />
@@ -84,7 +84,7 @@ export function DashboardHeroUI({ className }: { className?: string }) {
       <div className="charts mt-3">
         <p className="font-[600]">Charts</p>
         <div className="">
-            <PieChart1 />
+          <PieChart1 />
         </div>
       </div>
     </div>
