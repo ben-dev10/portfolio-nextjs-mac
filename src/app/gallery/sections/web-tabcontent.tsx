@@ -39,7 +39,7 @@ export const ImageCard = ({
 
 export default function WebTabContent() {
   return (
-    <div className="web-tab-content">
+    <div id="gallery-page--web-dev" className="web-tab-content">
       <div className="py-3">
         <h3 className="mb-2 text-[18px] font-[600]">Web Designs</h3>
         <div className="flex items-center gap-2">

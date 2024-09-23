@@ -80,6 +80,7 @@ const config: Config = {
       fontFamily: {
         gilroy: "Gilroy",
         pixelify: "pixelify",
+        geist: "Geist",
       },
       borderRadius: {
         lg: "var(--radius)",

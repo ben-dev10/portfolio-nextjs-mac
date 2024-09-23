@@ -9,6 +9,7 @@ import Image from "next/image";
 import SocialLinkIcons from "./social-icons";
 import { usePathname } from "next/navigation";
 import { NardLogo2 } from "./ui/nardlogos";
+import MenuIcon from "../menu-icon";
 
 export function SheetUI() {
   const SheetNavLinks = [
@@ -39,35 +40,7 @@ export function SheetUI() {
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button className="bg-transparent px-2 py-[6px] shadow-none hover:bg-gray-100 dark:hover:bg-neutral-500/10">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-              className="scale-[1.2]"
-            >
-              <path
-                d="M3 9H10.2188"
-                stroke="#94A3B8"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M3 4.5H15"
-                stroke="#94A3B8"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M3 13.5H12.75"
-                stroke="#94A3B8"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <MenuIcon />
           </Button>
         </SheetTrigger>
         <SheetContent
@@ -89,7 +62,7 @@ export function SheetUI() {
                   <Link
                     href={link.path}
                     id="navLink"
-                    className={`sheet-link hover:text-accent dark:hover:text-violet-200 ${
+                    className={`sheet-link hover:bg-accent hover:text-white dark:hover:text-violet-200 ${
                       isActive(link.path)
                         ? "active bg-violet-500 font-[600] text-white"
                         : ""
@@ -107,13 +80,8 @@ export function SheetUI() {
             </div>
           </div>
 
-          <SheetFooter
-            style={{
-              // backgroundImage: "url(bottom-bar-gradient.png)",
-            }}
-            className="absolute sheet-footer bottom-0 left-0 w-full h-[20px]"
-          >
-            <div className=""></div>
+          <SheetFooter className="relative">
+            <div className="w-full bg-gradient-to-r from-teal-300 via-green-400 to-blue-400"></div>
           </SheetFooter>
         </SheetContent>
       </Sheet>

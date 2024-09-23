@@ -1,3 +1,3 @@
 export const SnippetsTabcontent = () => {
-  return <div>SnippetsTabcontent</div>;
+  return <div id="resources-page--snippets">Snippets Tabcontent</div>;
 };

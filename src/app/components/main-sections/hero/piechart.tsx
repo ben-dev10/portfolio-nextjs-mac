@@ -65,7 +65,7 @@ export function PieChart1() {
         <CardTitle>Pie Chart - Donut with Text</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader> */}
-      <CardContent className="flex-1 bg-zinc-100 pb-0">
+      <CardContent className="flex-1 bg-zinc-100 dark:bg-zinc-50 pb-0">
         <ChartContainer
           config={chartConfig}
           className="mx-auto aspect-square max-h-[250px]"

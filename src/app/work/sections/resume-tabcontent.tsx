@@ -33,7 +33,7 @@ export const ResumeExperienceUI = ({
 
 export const ResumeTabcontent = () => {
   return (
-    <div>
+    <div id="resume-page--resume">
       <div className="py-3">
         <h3 className="mb-2 text-[18px] font-[600]">Resume</h3>
         <div className="flex flex-col gap-4 sm:gap-8 md:flex-row">
@@ -61,7 +61,7 @@ export const ResumeTabcontent = () => {
               <span className="md:max-w-[180px]">
                 {" "}
                 <span className="font-[600] dark:text-zinc-300">Languages</span>
-                : English (fluent) ,French (beginner), Twi (native), Ewe
+                : English (fluent) , French (beginner), Twi (native), Ewe
                 (beginner)
               </span>
             </div>

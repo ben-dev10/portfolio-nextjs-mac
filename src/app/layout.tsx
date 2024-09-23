@@ -5,9 +5,6 @@ import Footer from "@/app/components/footer-section";
 import { AppProvider } from "./store";
 import "@/utils/styles/fonts.css";
 import { ThemeProvider } from "next-themes";
-// import { Inter } from "next/font/google";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nard Portfolio",
@@ -27,7 +24,7 @@ export default function RootLayout({
     <AppProvider>
       <html lang="en" className="dark" suppressHydrationWarning>
         <body
-          className={`min-h-screen bg-background font-gilroy text-14px text-foreground`}
+          className={`min-h-screen bg-background font-geist text-14px text-foreground`}
         >
           <ThemeProvider
             attribute="class"

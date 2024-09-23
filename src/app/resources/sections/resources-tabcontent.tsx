@@ -1,3 +1,3 @@
 export const ResourcesTabcontent = () => {
-  return <div>ResourcesTabcontent</div>;
+  return <div id="resources-page--resources" className="">Resources Tabcontent</div>;
 };

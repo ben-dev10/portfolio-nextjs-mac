@@ -21,6 +21,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Geist";
+  src: url("../fonts/GeistVariableVF.ttf");
+  /* font-style: normal;
+  font-weight: 500; */
+  font-display: swap;
+}
+@font-face {
   font-family: "Pixelify";
   src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
   font-style: normal;

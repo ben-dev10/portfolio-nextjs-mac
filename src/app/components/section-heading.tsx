@@ -19,7 +19,7 @@ export default function SectionHeading({
       <Text
         as={hElement}
         size={hElement}
-        className={` ${className} dark:![background-image:linear-gradient(to_bottom,#E5E7EB_20%,#FAFAFA,#E5E7EB_80%)]`}
+        className={` ${className} font-gilroy dark:![background-image:linear-gradient(to_bottom,#E5E7EB_20%,#FAFAFA,#E5E7EB_80%)]`}
         style={gradientText(
           "linear-gradient(to bottom, #666666 10%, #000000, #666666 90%)",
         )}

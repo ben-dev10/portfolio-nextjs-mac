@@ -59,7 +59,13 @@ export const FeatureCard = ({
 
 export default function FeaturesSection() {
   return (
-    <div className="features-section bg-white dark:bg-[#17171A]">
+    <div
+      className="features-section dark:![background-image:url('/bg-designs/dark_perspective-lines.png')] bg-white dark:bg-[#17171A]"
+      style={{
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="wrapper container-4xl p-6 py-[70px]">
         <div className="mx-auto max-w-2xl text-center">
           <SectionHeading
@@ -71,8 +77,7 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="mt-5">
-          <p className="mx-auto mb-5 flex max-w-max justify-center gap-1 rounded-full bg-accent/10 p-1 px-3 text-center 
-          text-accent dark:bg-violet-700/20 dark:text-purple-300">
+          <p className="mx-auto mb-5 flex max-w-max justify-center gap-1 rounded-full bg-accent/10 p-1 px-3 text-center text-accent dark:bg-violet-700/20 dark:text-purple-300">
             <Sparkle
               size={16}
               className="text-purple-900 dark:text-purple-400"

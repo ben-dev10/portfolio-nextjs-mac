@@ -66,10 +66,10 @@ export const NardLogo2 = ({ className }: { className?: string }) => {
             y2="35.64"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#333" stop-opacity="0.8" />
-            <stop offset="0.14" stop-color="#222" stop-opacity="0.87" />
-            <stop offset="0.36" stop-color="#0f0f0f" stop-opacity="0.94" />
-            <stop offset="0.63" stop-color="#040404" stop-opacity="0.99" />
+            <stop offset="0" stopColor="#333" stopOpacity="0.8" />
+            <stop offset="0.14" stopColor="#222" stopOpacity="0.87" />
+            <stop offset="0.36" stopColor="#0f0f0f" stopOpacity="0.94" />
+            <stop offset="0.63" stopColor="#040404" stopOpacity="0.99" />
             <stop offset="1" />
           </linearGradient>
           <linearGradient
@@ -80,8 +80,8 @@ export const NardLogo2 = ({ className }: { className?: string }) => {
             y2="8.98"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.18" stop-color="#ba9bc9" />
-            <stop offset="1" stop-color="#29abe2" stop-opacity="0.7" />
+            <stop offset="0.18" stopColor="#ba9bc9" />
+            <stop offset="1" stopColor="#29abe2" stopOpacity="0.7" />
           </linearGradient>
           <linearGradient
             id="linear-gradient-3"
@@ -92,7 +92,7 @@ export const NardLogo2 = ({ className }: { className?: string }) => {
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.31" />
-            <stop offset="1" stop-color="#999" />
+            <stop offset="1" stopColor="#999" />
           </linearGradient>
         </defs>
         <g id="Layer_2" data-name="Layer 2">

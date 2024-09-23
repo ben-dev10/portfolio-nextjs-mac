@@ -1,7 +1,7 @@
 import { Text } from "@/ui/text/text";
-import { CalendarCheckIcon, MailCheckIcon } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import { gradientText } from "@/utils/ui-helpers";
+import Image from "next/image";
 
 export const ContactMedium = ({
   text,
@@ -35,7 +35,7 @@ export default function ContactSection() {
             <Text
               as="h1"
               size="h1"
-              className="text-3xl"
+              className="font-gilroy text-3xl font-[700]"
               style={gradientText(
                 "linear-gradient(to bottom, #E5E7EB 20%, #FAFAFA, #E5E7EB 80%)",
               )}
@@ -47,7 +47,7 @@ export default function ContactSection() {
               click on them to redirect to related applications.
             </p>
           </div>
-          <div className="mt-5 flex justify-center gap-4">
+          <div className="mt-5 flex justify-center gap-6">
             <ContactMedium
               text="WhatsApp Call or Chat"
               icon={<FaWhatsapp className="size-[32px] text-green-400" />}
@@ -55,13 +55,27 @@ export default function ContactSection() {
             />
             <ContactMedium
               text="Email"
-              icon={<MailCheckIcon className="size-[32px] text-blue-400" />}
+              icon={
+                <Image
+                  src="/assets/gmail.png"
+                  alt="gmail-icon"
+                  width={32}
+                  height={32}
+                  className="shadow-md"
+                />
+              }
               url="mailto:calvinklien025@gmail.con"
             />
             <ContactMedium
               text="Calender: Book an appointment"
               icon={
-                <CalendarCheckIcon className="size-[32px] text-amber-400" />
+                <Image
+                  src="/assets/calendar.png"
+                  alt="calendar-icon"
+                  width={31}
+                  height={31}
+                  className="shadow-md"
+                />
               }
             />
           </div>
