@@ -2,10 +2,8 @@ import { Button } from "@/ui/button";
 import { Sheet, SheetContent, SheetFooter, SheetTrigger } from "@/ui/sheet";
 import Link from "next/link";
 import { useState } from "react";
-import { BookCopyIcon, Building2, GalleryVertical, Home } from "lucide-react";
+import { BadgeEuroIcon, BookCopy, BookCopyIcon, Building2, GalleryVertical, Home } from "lucide-react";
 import "./navbar.css";
-import nardLogo from "public/logos/nard-logo-1.svg";
-import Image from "next/image";
 import SocialLinkIcons from "./social-icons";
 import { usePathname } from "next/navigation";
 import { NardLogo2 } from "./ui/nardlogos";
@@ -26,6 +24,18 @@ export function SheetUI() {
       name: "Resources",
       path: "/resources",
       icon: <BookCopyIcon size={16} />,
+    },
+    {
+      id: 5,
+      name: "Blog",
+      path: "/blog",
+      icon: <BookCopy size={16} />,
+    },
+    {
+      id: 6,
+      name: "Pricing",
+      path: "/pricing",
+      icon: <BadgeEuroIcon size={16} />,
     },
   ];
 

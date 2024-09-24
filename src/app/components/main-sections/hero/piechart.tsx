@@ -61,7 +61,7 @@ export function PieChart1() {
 
   return (
     <Card className="flex flex-col !border-none text-12px">
-      {/* <CardHeader className="items-center pb-0">
+      {/* <CardHeader className="items-center pb-0 text-[10px]">
         <CardTitle>Pie Chart - Donut with Text</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader> */}

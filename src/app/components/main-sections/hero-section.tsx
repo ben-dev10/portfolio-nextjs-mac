@@ -16,7 +16,7 @@ export default function HeroSection() {
         className="bg-grid absolute left-[50%] -z-10 -translate-x-1/2 -translate-y-[16%] opacity-70 dark:opacity-[.15]"
       />
       <div className="gradient-blob absolute left-[50%] -z-20 h-[400px] w-[540px] -translate-x-1/2 dark:opacity-40" />
-      <div className="mx-auto mb-[115px] max-w-2xl text-center">
+      <div className="mx-auto mb-[135px] max-w-2xl text-center">
         <SectionHeading
           hElement="h1"
           className="text-3xl"
@@ -43,14 +43,14 @@ export default function HeroSection() {
       </div>
       <div className="hero-images relative mx-auto mt-5 w-[300px]">
         <div className="min-h-[300px]">
-          <DashboardHeroUI className="front md:w-421 absolute left-[70px] -top-[30] z-[3] shadow-xl shadow-blue-200 dark:shadow-md" />
+          <DashboardHeroUI className="front md:w-421 absolute left-[70px] -top-[50] z-[3] shadow-xl shadow-blue-200 dark:shadow-md" />
           <Image
             src={hero2}
             width={406}
             alt="hero-image-2"
-            className="back md:w-506 absolute top-[-65px] scale-[1.2] shadow-xl shadow-gray-400 dark:shadow-sm"
+            className="back md:w-506 absolute top-[-85px] scale-[1.2] shadow-xl shadow-gray-400 dark:shadow-sm"
           />
-          <SignUpFormHeroUI className="middle md:w-418 absolute left-[-110px] top-[-60px] mx-auto shadow-xl shadow-pink-200 dark:shadow-md dark:shadow-pink-400 sm:left-[-140px]" />
+          <SignUpFormHeroUI className="middle md:w-418 absolute left-[-110px] top-[-80px] mx-auto shadow-xl shadow-pink-200 dark:shadow-md dark:shadow-pink-400 sm:left-[-140px]" />
         </div>
       </div>
     </div>

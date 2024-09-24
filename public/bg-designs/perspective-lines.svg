@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1375.2649px" height="640.27075px" viewBox="0 0 1375.2649 640.27075" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="-0.52805454" y1="-1.1903763" x2="1" y2="1" id="gradient_1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="100%" stop-color="#63D95D" stop-opacity="0.8235294" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.28478462" y1="0.70865303" x2="0.9838966" y2="0.017131094" id="gradient_2">
+      <stop offset="0%" stop-color="#6AB6F9" stop-opacity="0.7137255" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="-0.6076657" y1="-0.6450461" x2="1" y2="1" id="gradient_3">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#DF9393" stop-opacity="0.70980394" />
+    </linearGradient>
+    <path d="M0 0L640 0L640 460L0 460L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="perspective-lines">
+    <g id="perspective-lines-1" transform="translate(390.26495 179.77075)">
+      <path d="M0 0L640 0L640 460L0 460L0 0Z" id="Mask" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <g id="lines" transform="translate(-91.08038 -83.673096)">
+          <g id="Group-2" transform="translate(0 1)">
+            <path d="M180.221 29.4536L282.744 147.393" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M213.233 190.173L29.2327 79.6731" id="Line-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M213.741 234.607L14.7246 154.24" id="Line-3-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M213.455 316.753L0 339.188" id="Line-3-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M213.188 356.044L12.8124 432.961" id="Line-3-Copy-4" fill="none" fill-rule="evenodd" stroke="#FFBE1B" stroke-opacity="0.44313726" stroke-width="1" stroke-linecap="square" />
+            <path d="M212.781 395.784L34.8438 515.804" id="Line-3-Copy-6" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M212.696 450.673L60.9288 602.44" id="Line-3-Copy-5" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M341.077 0L394.525 146.846" id="Line-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M180.733 582.673L283.756 449.734" transform="matrix(1 0 0 -1 0 1032.4072)" id="Line-Copy-5" fill="none" fill-rule="evenodd" stroke="#FB71F9" stroke-opacity="0.6392157" stroke-width="1" stroke-linecap="square" />
+            <path d="M341.233 597.673L394.68 450.827" transform="matrix(1 0 0 -1 0 1048.4998)" id="Line-Copy-6" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M259.233 582.673L342.044 450.148" transform="matrix(1 0 0 -1 0 1032.8212)" id="Line-Copy-7" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M103.733 36.1731L214.233 146.673" id="Line" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+          </g>
+          <g id="Group-2-Copy" transform="matrix(-1 0 0 1 862.9644 0)">
+            <path d="M220.977 29.4536L323.5 147.393" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M253.989 190.173L26.2675 53.4166" id="Line-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M254.497 234.607L5.40967 134.02" id="Line-3-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M253.477 277.759L0 237.657" id="Line-3-Copy-2" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M254.211 316.753L5.94849 342.846" id="Line-3-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M253.537 395.784L13.4226 557.743" id="Line-3-Copy-6" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M253.452 450.673L101.685 602.44" id="Line-3-Copy-5" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M381.833 0L435.281 146.846" id="Line-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M221.489 582.673L324.511 449.734" transform="matrix(1 0 0 -1 0 1032.4072)" id="Line-Copy-5" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M381.989 597.673L435.436 450.827" transform="matrix(1 0 0 -1 0 1048.4998)" id="Line-Copy-6" fill="none" fill-rule="evenodd" stroke="#DF9393" stroke-width="1" stroke-linecap="square" />
+            <path d="M299.989 582.673L382.799 450.148" transform="matrix(1 0 0 -1 0 1032.8212)" id="Line-Copy-7" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+            <path d="M303.333 13.1606L386.144 145.686" id="Line-Copy-4" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
+          </g>
+        </g>
+        <g id="box" transform="translate(121 63)">
+          <path d="M1 1L397 1" id="Line" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
+          <path d="M1 304L397 304" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
+          <path d="M199 1.00012L199 304" id="Line" fill="none" fill-rule="evenodd" stroke="none" />
+          <path d="M1 1L1 304" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
+          <path d="M397 1L397 304" id="Line-Copy-2" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
+        </g>
+      </g>
+    </g>
+    <path d="M512.259 375.309L0 294.267" id="Line-3-Copy-2" fill="none" fill-rule="evenodd" stroke="url(#gradient_1)" stroke-width="1" stroke-linecap="square" />
+    <path d="M1374.26 577.271L908.765 456.271" transform="matrix(1 0 0 -1 0 1033.5417)" id="Line-3-Copy-3" fill="none" fill-rule="evenodd" stroke="url(#gradient_2)" stroke-width="1" stroke-linecap="square" />
+    <path d="M644.265 242.771L492.565 -1.52588e-05" transform="matrix(-1 0 0 -1 1136.8303 242.77074)" id="Line-Copy-4" fill="none" fill-rule="evenodd" stroke="#6AB6F9" stroke-opacity="0.41568628" stroke-width="1" stroke-linecap="square" />
+    <path d="M1054.76 103.271L907.765 243.271" transform="matrix(-1 0 0 1 1962.53 0)" id="Line" fill="none" fill-rule="evenodd" stroke="url(#gradient_3)" stroke-width="1" stroke-linecap="square" />
+  </g>
+</svg>

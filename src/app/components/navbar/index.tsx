@@ -10,6 +10,7 @@ import SocialLinkIcons from "./social-icons";
 import { useTheme } from "next-themes";
 import { NardLogo1, NardLogo2 } from "./ui/nardlogos";
 import TooltipUI from "../TooltipUI";
+import DropdownMenuLinks from "../DropdownMenuLinks";
 
 function Logo() {
   const { theme } = useTheme();
@@ -48,6 +49,15 @@ function Links() {
             </Link>
           </li>
         ))}
+        <div className="">
+          <DropdownMenuLinks
+            trigger="Services"
+            links={[
+              { label: "Blog", url: "/blog" },
+              { label: "Pricing", url: "/pricing" },
+            ]}
+          />
+        </div>
       </ul>
     </div>
   );
@@ -102,7 +112,7 @@ function CV() {
 // TODO: experimental expandable navbar
 export default function NavBar() {
   return (
-    <div className="header-wrapper font-normal border-b border-border bg-gray-50 dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
+    <div className="header-wrapper border-b border-border bg-gray-50 font-normal dark:bg-gradient-to-bl dark:from-stone-950 dark:to-neutral-950">
       <div className="container-4xl h-[60px] w-full">
         <div className="primary-nav flex items-center gap-x-3 p-2 px-4 pl-[7px] pt-3 md:pt-4">
           <MenuIcon />
