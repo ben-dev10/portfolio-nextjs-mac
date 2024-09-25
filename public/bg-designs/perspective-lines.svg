@@ -1,69 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="1375.2649px" height="640.27075px" viewBox="0 0 1375.2649 640.27075" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient gradientUnits="objectBoundingBox" x1="-0.52805454" y1="-1.1903763" x2="1" y2="1" id="gradient_1">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
-      <stop offset="100%" stop-color="#63D95D" stop-opacity="0.8235294" />
-    </linearGradient>
-    <linearGradient gradientUnits="objectBoundingBox" x1="0.28478462" y1="0.70865303" x2="0.9838966" y2="0.017131094" id="gradient_2">
-      <stop offset="0%" stop-color="#6AB6F9" stop-opacity="0.7137255" />
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
-    </linearGradient>
-    <linearGradient gradientUnits="objectBoundingBox" x1="-0.6076657" y1="-0.6450461" x2="1" y2="1" id="gradient_3">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#DF9393" stop-opacity="0.70980394" />
-    </linearGradient>
-    <path d="M0 0L640 0L640 460L0 460L0 0Z" id="path_1" />
-    <clipPath id="mask_1">
-      <use xlink:href="#path_1" />
-    </clipPath>
-  </defs>
-  <g id="perspective-lines">
-    <g id="perspective-lines-1" transform="translate(390.26495 179.77075)">
-      <path d="M0 0L640 0L640 460L0 460L0 0Z" id="Mask" fill="none" fill-rule="evenodd" stroke="none" />
-      <g clip-path="url(#mask_1)">
-        <g id="lines" transform="translate(-91.08038 -83.673096)">
-          <g id="Group-2" transform="translate(0 1)">
-            <path d="M180.221 29.4536L282.744 147.393" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M213.233 190.173L29.2327 79.6731" id="Line-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M213.741 234.607L14.7246 154.24" id="Line-3-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M213.455 316.753L0 339.188" id="Line-3-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M213.188 356.044L12.8124 432.961" id="Line-3-Copy-4" fill="none" fill-rule="evenodd" stroke="#FFBE1B" stroke-opacity="0.44313726" stroke-width="1" stroke-linecap="square" />
-            <path d="M212.781 395.784L34.8438 515.804" id="Line-3-Copy-6" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M212.696 450.673L60.9288 602.44" id="Line-3-Copy-5" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M341.077 0L394.525 146.846" id="Line-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M180.733 582.673L283.756 449.734" transform="matrix(1 0 0 -1 0 1032.4072)" id="Line-Copy-5" fill="none" fill-rule="evenodd" stroke="#FB71F9" stroke-opacity="0.6392157" stroke-width="1" stroke-linecap="square" />
-            <path d="M341.233 597.673L394.68 450.827" transform="matrix(1 0 0 -1 0 1048.4998)" id="Line-Copy-6" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M259.233 582.673L342.044 450.148" transform="matrix(1 0 0 -1 0 1032.8212)" id="Line-Copy-7" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M103.733 36.1731L214.233 146.673" id="Line" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-          </g>
-          <g id="Group-2-Copy" transform="matrix(-1 0 0 1 862.9644 0)">
-            <path d="M220.977 29.4536L323.5 147.393" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M253.989 190.173L26.2675 53.4166" id="Line-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M254.497 234.607L5.40967 134.02" id="Line-3-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M253.477 277.759L0 237.657" id="Line-3-Copy-2" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M254.211 316.753L5.94849 342.846" id="Line-3-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M253.537 395.784L13.4226 557.743" id="Line-3-Copy-6" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M253.452 450.673L101.685 602.44" id="Line-3-Copy-5" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M381.833 0L435.281 146.846" id="Line-Copy-3" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M221.489 582.673L324.511 449.734" transform="matrix(1 0 0 -1 0 1032.4072)" id="Line-Copy-5" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M381.989 597.673L435.436 450.827" transform="matrix(1 0 0 -1 0 1048.4998)" id="Line-Copy-6" fill="none" fill-rule="evenodd" stroke="#DF9393" stroke-width="1" stroke-linecap="square" />
-            <path d="M299.989 582.673L382.799 450.148" transform="matrix(1 0 0 -1 0 1032.8212)" id="Line-Copy-7" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-            <path d="M303.333 13.1606L386.144 145.686" id="Line-Copy-4" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.2784314" stroke-width="1" stroke-linecap="square" />
-          </g>
-        </g>
-        <g id="box" transform="translate(121 63)">
-          <path d="M1 1L397 1" id="Line" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
-          <path d="M1 304L397 304" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
-          <path d="M199 1.00012L199 304" id="Line" fill="none" fill-rule="evenodd" stroke="none" />
-          <path d="M1 1L1 304" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
-          <path d="M397 1L397 304" id="Line-Copy-2" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-opacity="0.33333334" stroke-width="1" stroke-linecap="square" />
-        </g>
-      </g>
-    </g>
-    <path d="M512.259 375.309L0 294.267" id="Line-3-Copy-2" fill="none" fill-rule="evenodd" stroke="url(#gradient_1)" stroke-width="1" stroke-linecap="square" />
-    <path d="M1374.26 577.271L908.765 456.271" transform="matrix(1 0 0 -1 0 1033.5417)" id="Line-3-Copy-3" fill="none" fill-rule="evenodd" stroke="url(#gradient_2)" stroke-width="1" stroke-linecap="square" />
-    <path d="M644.265 242.771L492.565 -1.52588e-05" transform="matrix(-1 0 0 -1 1136.8303 242.77074)" id="Line-Copy-4" fill="none" fill-rule="evenodd" stroke="#6AB6F9" stroke-opacity="0.41568628" stroke-width="1" stroke-linecap="square" />
-    <path d="M1054.76 103.271L907.765 243.271" transform="matrix(-1 0 0 1 1962.53 0)" id="Line" fill="none" fill-rule="evenodd" stroke="url(#gradient_3)" stroke-width="1" stroke-linecap="square" />
-  </g>
+<svg width="1363" height="641" viewBox="0 0 1363 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_139_53" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="390" y="179" width="641" height="461">
+<path d="M390.265 179.771H1030.27V639.771H390.265V179.771Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_139_53)">
+<path d="M479.406 125.551L581.929 243.491" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M512.418 287.271L328.417 176.771" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M512.926 331.705L313.909 251.338" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M512.64 413.851L299.185 436.286" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M512.373 453.142L311.997 530.059" stroke="#FFBE1B" stroke-opacity="0.443137" stroke-linecap="square"/>
+<path d="M511.966 492.882L334.028 612.902" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M511.88 547.771L360.113 699.538" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M640.262 97.0977L693.71 243.944" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M577.212 547.374L465.646 673.229" stroke="#FB71F9" stroke-opacity="0.639216" stroke-linecap="square"/>
+<path d="M577.212 547.374L465.646 673.229" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M641.562 547.248L536.2 678.341" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M693.797 546.757L621.964 698.832" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M401.917 133.271L512.417 243.771" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M941.172 125.551L838.649 243.491" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M908.16 286.271L1135.88 149.514" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M907.652 330.705L1156.74 230.118" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M908.672 373.857L1162.15 333.755" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M907.938 412.851L1156.2 438.944" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M908.612 491.882L1148.73 653.841" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M908.697 546.771L1060.46 698.538" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M780.316 96.0977L726.868 242.944" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M735.311 547.69L765.562 701.004" stroke="#DF9393" stroke-linecap="square"/>
+<path d="M789.957 547L843.345 693.867" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M843.118 547L931.391 675.95" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M857.816 111.258L775.005 243.784" stroke="#BDBDBD" stroke-opacity="0.278431" stroke-linecap="square"/>
+<path d="M512.265 243.771H908.265" stroke="#BDBDBD" stroke-opacity="0.333333" stroke-linecap="square"/>
+<path d="M512.265 546.771H908.265" stroke="#BDBDBD" stroke-opacity="0.333333" stroke-linecap="square"/>
+<path d="M512.265 243.771V546.771" stroke="#BDBDBD" stroke-opacity="0.333333" stroke-linecap="square"/>
+<path d="M908.265 243.771V546.771" stroke="#BDBDBD" stroke-opacity="0.333333" stroke-linecap="square"/>
+</g>
+<path d="M512.259 375.309L0 294.267" stroke="url(#paint0_linear_139_53)" stroke-linecap="square"/>
+<path d="M1362.03 611.526L908.995 450.016" stroke="url(#paint1_linear_139_53)" stroke-linecap="square"/>
+<path d="M492.565 -0.000259399L644.265 242.771" stroke="#6AB6F9" stroke-opacity="0.415686" stroke-linecap="square"/>
+<path d="M1051.67 99.1314L908.869 243.411" stroke="url(#paint2_linear_139_53)" stroke-linecap="square"/>
+<defs>
+<linearGradient id="paint0_linear_139_53" x1="-86.5" y1="267" x2="-65.222" y2="423.033" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="#63D95D" stop-opacity="0.823529"/>
+</linearGradient>
+<linearGradient id="paint1_linear_139_53" x1="1096" y1="515.5" x2="1123.71" y2="680.704" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6AB6F9" stop-opacity="0.713726"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_139_53" x1="1052" y1="102" x2="916.247" y2="250.62" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#DF9393" stop-opacity="0.709804"/>
+</linearGradient>
+</defs>
 </svg>

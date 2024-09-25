@@ -1,5 +1,7 @@
-import { Text } from "@/ui/text/text";
+"use client";
 import SectionHeading from "../section-heading";
+import { motion } from "framer-motion";
+
 import {
   AppWindowIcon,
   HardHat,
@@ -29,7 +31,7 @@ export const FeatureCard = ({
         backgroundImage: url,
         backgroundPosition: "center center",
       }}
-      className="feature-card shadow-lg flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-13px text-white"
+      className="feature-card flex min-h-[200px] w-[160px] shrink-0 flex-col rounded-md p-5 text-13px text-white shadow-lg"
     >
       <div className="flex">
         <div className="icon grid size-[40px] place-items-center rounded-md bg-white">
@@ -60,7 +62,7 @@ export const FeatureCard = ({
 export default function FeaturesSection() {
   return (
     <div
-      className="features-section dark:![background-image:url('/bg-designs/dark_perspective-lines.png')] bg-white dark:bg-[#17171A]"
+      className="features-section bg-white dark:bg-[#17171A] dark:![background-image:url('/bg-designs/dark_perspective-lines.svg')]"
       style={{
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
@@ -78,10 +80,18 @@ export default function FeaturesSection() {
         </div>
         <div className="mt-5">
           <p className="mx-auto mb-5 flex max-w-max justify-center gap-1 rounded-full bg-accent/10 p-1 px-3 text-center text-accent dark:bg-violet-700/20 dark:text-purple-300">
-            <Sparkle
-              size={16}
-              className="text-purple-900 dark:text-purple-400"
-            />
+            <motion.span
+              className="[transform-origin:center_center]"
+              animate={{
+                rotate: 360,
+                transition: { duration: 4, repeat: Infinity, fillMode:"forwards" },
+              }}
+            >
+              <Sparkle
+                size={16}
+                className="text-purple-900 dark:text-purple-400"
+              />
+            </motion.span>
             What&apos;s Included
           </p>
           <div className="flex gap-5 overflow-x-scroll pb-8 md:justify-center">

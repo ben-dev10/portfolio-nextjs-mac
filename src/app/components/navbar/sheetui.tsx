@@ -84,7 +84,7 @@ export function SheetUI() {
                 </li>
               ))}
             </div>
-            <div className="mt-[30%] border-t p-3">
+            <div className="mt-[30%] border-t border-border p-3">
               <NardLogo2 className="w-[100px]" />
               <p className="mt-1">2024 - present</p>
             </div>

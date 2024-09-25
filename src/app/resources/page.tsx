@@ -13,9 +13,8 @@ export default function Resources() {
             <div className="my-10 max-w-lg">
               <SectionHeading
                 hElement="h1"
-                title="Gallery"
-                subheading="This page is where I showcase a collection of all my past 
-                works and where future works too will be displayed."
+                title="Resources"
+                subheading="Useful links, design assets, code snippets and more."
                 align="left"
               />
             </div>

@@ -107,4 +107,24 @@ export const footerLinksData = [
       },
     ],
   },
+  {
+    id: 5,
+    header: "Services",
+    links: [
+      {
+        id: "5i",
+        text: "Pricing",
+        link: "/pricing",
+        special: false,
+        externalink: false,
+      },
+      // {
+      //   id: "4ii",
+      //   text: "Roadmap",
+      //   link: "/blog",
+      //   special: false,
+      //   externalink: false,
+      // },
+    ],
+  },
 ];

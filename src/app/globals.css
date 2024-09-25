@@ -149,6 +149,11 @@
   background-size: auto 500px;
   background-repeat: no-repeat;
 }
+.header-gradient-2 {
+  background-image: url("/bg-designs/gradient-blob-2.png");
+  background-size: auto 500px;
+  background-repeat: no-repeat;
+}
 
 .icon-sprite {
   background-image: url("/icon-sprite.png");
@@ -163,4 +168,11 @@
 
 .features-section {
   background-image: url("/bg-designs/perspective-lines.svg");
+}
+
+.blog-page--header-grid {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/bg-designs/grid-box.svg");
 }

@@ -27,12 +27,12 @@ export default function DropdownMenuLinks({
       onMouseLeave={() => setOpen(false)}
     >
       <DropdownMenu modal={false} open={open} onOpenChange={setOpen}>
-        <DropdownMenuTrigger className="group flex items-center gap-[3px] outline-none">
+        <DropdownMenuTrigger className="group flex items-center gap-[3px] outline-none hover:text-accent dark:hover:text-violet-400">
           {trigger} <ChevronDown size={18} />{" "}
         </DropdownMenuTrigger>
         <DropdownMenuContent className="z-[999999] " sideOffset={2}>
           {links.map((link, index) => (
-            <DropdownMenuItem>
+            <DropdownMenuItem className="">
               <Link
                 className="w-full hover:text-white"
                 href={link.url}
