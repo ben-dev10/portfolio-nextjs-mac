@@ -30,9 +30,9 @@ export default function DropdownMenuLinks({
         <DropdownMenuTrigger className="group flex items-center gap-[3px] outline-none hover:text-accent dark:hover:text-violet-400">
           {trigger} <ChevronDown size={18} />{" "}
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="z-[999999] " sideOffset={2}>
+        <DropdownMenuContent className="z-[999999]" sideOffset={2}>
           {links.map((link, index) => (
-            <DropdownMenuItem className="">
+            <DropdownMenuItem className="" key={index}>
               <Link
                 className="w-full hover:text-white"
                 href={link.url}
