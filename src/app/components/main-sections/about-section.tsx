@@ -18,7 +18,7 @@ export default function AboutSection() {
         <div className="mt-5">
           <div className="bento-grid mx-auto grid grid-cols-3 gap-2 sm:grid-rows-[250px_270px]">
             {/* 1 */}
-            <div className="c1 relative col-span-3 border p-5 sm:col-span-2 sm:row-span-1">
+            <div className="c1 relative col-span-3 border p-7 sm:col-span-2 sm:row-span-1">
               <div className="gradient-bar absolute left-0 top-0 h-full w-[6px] bg-gradient-to-b from-blue-300 via-cyan-300 to-fuchsia-300" />
               <h3 className="mb-3 text-[22px] font-[600] text-black/90 dark:text-zinc-300">
                 👋 Welcome once again

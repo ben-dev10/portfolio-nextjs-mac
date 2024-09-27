@@ -2,12 +2,20 @@ import { Button } from "@/ui/button";
 import { Sheet, SheetContent, SheetFooter, SheetTrigger } from "@/ui/sheet";
 import Link from "next/link";
 import { useState } from "react";
-import { BadgeEuroIcon, BookCopy, BookCopyIcon, Building2, GalleryVertical, Home } from "lucide-react";
+import {
+  BadgeEuroIcon,
+  BookCopy,
+  BookCopyIcon,
+  Building2,
+  GalleryVertical,
+  Home,
+} from "lucide-react";
 import "./navbar.css";
 import SocialLinkIcons from "./social-icons";
 import { usePathname } from "next/navigation";
 import { NardLogo2 } from "./ui/nardlogos";
 import MenuIcon from "../menu-icon";
+import Image from "next/image";
 
 export function SheetUI() {
   const SheetNavLinks = [
@@ -55,7 +63,7 @@ export function SheetUI() {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="fixed bottom-0 left-[0px] top-[0px] z-[9999] flex h-screen w-full flex-col bg-white/[.88] p-5 pl-3 pt-3 backdrop-blur-[20px] dark:bg-black/[.84] md:hidden md:max-w-full"
+          className="sheet-content fixed bottom-0 left-[0px] top-[0px] z-[9999] flex h-screen w-full flex-col bg-white/[.88] p-5 pl-3 pt-3 backdrop-blur-[20px] dark:bg-black/[.84] md:hidden md:max-w-full"
         >
           <div className="links mx-auto mb-auto flex w-[90%] max-w-[450px] flex-col gap-3 text-[13px]">
             <div className="icons flex justify-end pb-2">
@@ -64,7 +72,7 @@ export function SheetUI() {
               </div>
             </div>
             <div className="line-wrapper absolute left-0 mt-8 h-1 w-full">
-              <div className="line mx-auto w-[100%] border-b border-border" />
+              <div className="line mx-auto w-[100%] border-b border-blue-50" />
             </div>
             <div onClick={handleClick} className="mt-8 space-y-3">
               {SheetNavLinks.map((link) => (
@@ -84,9 +92,15 @@ export function SheetUI() {
                 </li>
               ))}
             </div>
-            <div className="mt-[30%] border-t border-border p-3">
-              <NardLogo2 className="w-[100px]" />
-              <p className="mt-1">2024 - present</p>
+            <div className="mt-[30%] rounded-lg bg-gray-50/30 p-5">
+              <Image
+                alt="nard-logo"
+                src="/logos/nard-logo-2b.svg"
+                width={100}
+                height={57}
+                className="object-contain"
+              />
+              <p className="mt-[7px] text-[11px]">2024 - present</p>
             </div>
           </div>
 

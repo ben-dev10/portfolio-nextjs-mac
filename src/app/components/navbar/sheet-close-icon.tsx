@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { motion, useAnimation } from "framer-motion";
 
-export const XCloseIcon = ({ size }: { size: "md" | "lg" }) => {
+export const XCloseIcon = ({ className }: { className: string }) => {
   const controls = useAnimation();
 
   const handleClick = () => {
@@ -23,7 +23,7 @@ export const XCloseIcon = ({ size }: { size: "md" | "lg" }) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={clsx(`cursor-pointer size-${size} hover:stroke-accent`)}
+      className={clsx(`cursor-pointer ${className} hover:stroke-accent`)}
     >
       <path d="M18 6 6 18"></path>
       <path d="m6 6 12 12"></path>

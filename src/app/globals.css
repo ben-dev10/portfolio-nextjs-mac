@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* dark:bg-[#13151A] */
+html {
+  font-size: 13px;
+}
 
 @layer base {
   /* zinc */

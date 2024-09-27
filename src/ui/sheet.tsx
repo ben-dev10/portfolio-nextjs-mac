@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
-// import { X } from "lucide-react";
 import { XCloseIcon } from "@/app/components/navbar/sheet-close-icon";
 
 import { cn } from "@/utils/cn";
@@ -20,7 +19,7 @@ const SheetOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Overlay
     className={cn(
-      "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/80",
+      "fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
       className,
     )}
     {...props}
@@ -64,9 +63,9 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="focus:ring-transparent data-[state=open]:bg-secondary rounded-full size-5 absolute left-4 top-3 opacity-70 outline-none ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
+      <SheetPrimitive.Close className="absolute left-4 top-3 rounded-full  opacity-70 outline-none transition-opacity hover:opacity-100 focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
         {/* Replaced shadcn default close icon <X className="h-4 w-4" /> */}
-        <XCloseIcon size="md" />
+        <XCloseIcon className="size-[16px]" />
         <span className="sr-only hidden">Close</span>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
@@ -120,7 +119,7 @@ const SheetDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Description
     ref={ref}
-    className={cn("text-muted-foreground text-sm", className)}
+    className={cn("text-sm text-muted-foreground", className)}
     {...props}
   />
 ));

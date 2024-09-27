@@ -1,3 +1,9 @@
+.sheet-content{
+  background-image: url("/bg-designs/sheet-bg.png");
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+}
+
 .sheet-link {
   @apply flex items-center gap-2 rounded-md p-2 transition-colors delay-100 hover:bg-accent/90 hover:text-white;
 }
