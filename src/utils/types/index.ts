@@ -49,12 +49,3 @@ export type PolymorphicComponentPropsWithRef<
   C extends React.ElementType,
   Props = {},
 > = PolymorphicComponentProps<C, Props> & { ref?: PolymorphicRef<C> };
-
-// blog
-export type ArticleItem = {
-  id: string;
-  title: string;
-  date: string;
-  url: string;
-  category: string;
-};

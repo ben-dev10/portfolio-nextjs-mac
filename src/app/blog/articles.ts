@@ -5,7 +5,15 @@ import moment from "moment";
 import { remark } from "remark";
 import html from "remark-html";
 
-import type { ArticleItem } from "@/types/index";
+export type ArticleItem = {
+  id: string;
+  title: string;
+  subtitle: string;
+  date: string;
+  url: string;
+  category: string;
+  tags: string[];
+};
 
 const articlesDirectory = path.join(process.cwd(), "./src/utils/articles");
 
@@ -22,9 +30,11 @@ export const getSortedArticles = (): ArticleItem[] => {
     return {
       id,
       title: matterResult.data.title,
+      subtitle: matterResult.data.subtitle,
       date: matterResult.data.date,
       category: matterResult.data.category,
       url: matterResult.data.url,
+      tags: matterResult.data.tags,
     };
   });
 
@@ -70,8 +80,10 @@ export const getArticleData = async (id: string) => {
     id,
     contentHTML,
     title: matterResult.data.title,
+    subtitle: matterResult.data.subtitle,
     category: matterResult.data.category,
     date: moment(matterResult.data.date, "DD-MM-YYYY").format("MMMM Do YYYY"),
     url: matterResult.data.url,
+    tags: matterResult.data.tags,
   };
 };

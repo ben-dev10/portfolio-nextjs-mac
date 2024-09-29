@@ -1,5 +1,5 @@
 import { getCategorisedArticles } from "./articles";
-import ArticleItemList from "@/app/components/ArticleListItem";
+import ArticleItemList from "./ArticleListItem";
 
 export default function Blog() {
   const articles = getCategorisedArticles();
@@ -18,8 +18,8 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <div className="dark:bg-[#17171A]">
-        <div className="wrapper blog-page-content container-4xl p-5 pt-[25px] pb-[50px]">
+      <div className="dark:bg-[#17171A] pb-[70px]">
+        <div className="wrapper blog-page-content container-4xl p-5 pb-[50px] pt-[25px]">
           <section className="blog-section mx-auto">
             {articles !== null &&
               Object.keys(articles).map((article) => (

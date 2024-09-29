@@ -1,0 +1,28 @@
+section.blog-details-page {
+  background-image: url(/bg-designs/blog-bg-design.png);
+  background-position: center -650px;
+}
+/* title */
+section.blog-details-page div article h1 {
+  @apply text-zinc-700 dark:text-zinc-200;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* subtitle */
+section.blog-details-page div article h4 {
+  @apply text-gray-400 dark:text-zinc-400;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+/* blog-banner */
+section.blog-details-page div article img[alt="blog banner"] {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
