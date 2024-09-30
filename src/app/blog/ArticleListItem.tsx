@@ -18,7 +18,7 @@ export function ArticleCard({
   date: string;
 }) {
   return (
-    <div className="w-full rounded-lg border border-border bg-card text-zinc-500 sm:min-w-[200px]">
+    <div className="article-card w-full rounded-lg border border-border bg-card text-[0.923rem] text-zinc-500 sm:min-w-[200px]">
       <img
         src={url}
         alt={`${title}`}
@@ -28,7 +28,7 @@ export function ArticleCard({
         <h5 className="mt-1 text-[17px] font-[600] text-zinc-600 dark:text-zinc-200">
           {title}
         </h5>
-        <p className="mb-6 mt-[2px] text-zinc-400 dark:text-zinc-400">
+        <p className="truncate-2 mb-6 mt-[2px] text-zinc-400 dark:text-zinc-400">
           {subtitle}
         </p>
         <small className="mt-auto">{date}</small>
@@ -46,7 +46,7 @@ const ArticleItemList = ({ category, articles }: Props) => {
           <Link
             href={`/${article.id}`}
             key={id}
-            className="text-[12px] text-neutral-900 transition duration-150 hover:text-indigo-700"
+            className="text-neutral-900 transition duration-150 hover:text-indigo-700"
           >
             <ArticleCard
               title={article.title}

@@ -1,3 +1,5 @@
+// always use full paths for tw-css plugin imports
+// import { truncatePlugin } from "./src/utils/plugins/truncate-tw";
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
@@ -112,6 +114,8 @@ const config: Config = {
     },
   },
 
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), 
+    // truncatePlugin
+  ],
 };
 export default config;

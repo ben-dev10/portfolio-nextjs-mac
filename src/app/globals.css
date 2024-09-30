@@ -178,3 +178,12 @@ html {
   inset: 0;
   background-image: url("/bg-designs/grid-box.svg");
 }
+
+.truncate-text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+}

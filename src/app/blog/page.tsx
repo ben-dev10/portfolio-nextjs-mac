@@ -5,7 +5,7 @@ export default function Blog() {
   const articles = getCategorisedArticles();
 
   return (
-    <main>
+    <main className="text-[1rem]">
       <div className="blog-page--header relative overflow-hidden bg-gray-100 dark:bg-transparent">
         <div className="blog-page--header-grid opacity-20 dark:opacity-10 dark:[background-image:url(/bg-designs/grid-box--dark.svg)]" />
         <div className="wrapper container-4xl relative z-[5] p-5">
